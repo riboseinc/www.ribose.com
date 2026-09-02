@@ -4,6 +4,47 @@ export interface SearchHit {
   section: string
 }
 
+export const debounce = (fn: () => void, ms = 140): (() => void) => {
+  let timer: ReturnType<typeof setTimeout> | undefined
+  return () => {
+    clearTimeout(timer)
+    timer = setTimeout(fn, ms)
+  }
+}
+
+// The one result-list renderer — both search UIs (palette and /search
+// page) delegate to it so a row-design change lands everywhere at once.
+// `decorate` lets the palette attach keyboard-nav semantics per row.
+export const renderResults = (
+  container: HTMLElement,
+  hits: SearchHit[],
+  note?: string,
+  decorate?: (row: HTMLAnchorElement, hit: SearchHit, index: number) => void,
+): void => {
+  container.replaceChildren()
+  if (note) {
+    const p = document.createElement('p')
+    p.className = 'px-3 py-8 text-center text-sm text-slate-500'
+    p.textContent = note
+    container.append(p)
+    return
+  }
+  hits.forEach((hit, i) => {
+    const a = document.createElement('a')
+    a.href = hit.url
+    a.className = 'sp-row block no-underline'
+    const title = document.createElement('span')
+    title.className = 'truncate font-medium'
+    title.textContent = hit.title
+    const meta = document.createElement('span')
+    meta.className = 'sp-meta'
+    meta.textContent = hit.section
+    a.append(title, meta)
+    decorate?.(a, hit, i)
+    container.append(a)
+  })
+}
+
 // Pagefind assets exist only after the post-build indexing step, so the
 // specifier is assembled at runtime — no bundler can try to resolve it.
 const pagefindUrl = ['/pagefind', 'pagefind.js'].join('/')

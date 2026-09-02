@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/Base.astro'
 import { posts } from '../../lib/posts'
 const zh = posts.filter((p) => p.lang === 'zh-hant').sort((a, b) => b.date.localeCompare(a.date))
 ---
-<BaseLayout title="News (繁體中文)" description="Ribose 新聞 — 繁體中文版本。" path="/news/zh-hant">
+<BaseLayout title="News (繁體中文)" description="Ribose 新聞 — 繁體中文版本。" path="/news/zh-hant" lang="zh-hant">
   <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6" lang="zh-hant">
     <p class="eyebrow">Newsroom</p>
     <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">新聞（繁體中文）</h1>

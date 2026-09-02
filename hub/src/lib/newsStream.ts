@@ -1,6 +1,7 @@
 // The publishable news stream: a feed-shaped projection of the news index
 // (newsmlg2.js/ninjs/Atom all derive from this one list).
 import { newsStreamArticles } from './newsIndex'
+import { SITE } from './seo'
 
 export interface StreamItem {
   urn: string            // guid, e.g. urn:ribose:news:2023-04-25:press-cna
@@ -12,8 +13,6 @@ export interface StreamItem {
   origin: string         // label, e.g. ribose.com / PubID
   canonical: string      // absolute canonical URL
 }
-
-export const SITE = 'https://www.ribose.com'
 
 export const newsStream = async (): Promise<StreamItem[]> =>
   (await newsStreamArticles()).map((a) => ({

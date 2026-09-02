@@ -1,15 +1,13 @@
 ---
 import BaseLayout from '../../layouts/Base.astro'
 import PlatformCard from '../../components/PlatformCard.astro'
+import PageHero from '../../components/PageHero.astro'
 import { platforms } from '../../lib/registry'
 ---
 <BaseLayout title="Platforms" description="The Ribose platforms: Metanorma for standards publication, Primmel Digital CAB for SMART standards workflows." path="/platforms">
-  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-    <p class="eyebrow">Platforms</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">Platforms</h1>
-    <p class="mt-3 max-w-2xl text-slate-600 dark:text-slate-400">Complete offerings assembled from our open-source suites — adopt the whole platform, or just the pieces.</p>
+  <PageHero eyebrow="Platforms" title="Platforms" lede="Complete offerings assembled from our open-source suites — adopt the whole platform, or just the pieces.">
     <div class="mt-8 grid gap-4 md:grid-cols-2">
       {platforms.map((platform) => <PlatformCard platform={platform} />)}
     </div>
-  </section>
+  </PageHero>
 </BaseLayout>

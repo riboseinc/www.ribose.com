@@ -19,44 +19,19 @@
 </dialog>
 
 <script>
-  import { loadPagefind, search } from '../lib/searchCore'
+  import { loadPagefind, search, renderResults, debounce } from '../lib/searchCore'
 
   const dlg = () => document.getElementById('search-palette') as HTMLDialogElement
   const input = () => document.getElementById('sp-input') as HTMLInputElement
   const list = () => document.getElementById('sp-results') as HTMLElement
   let active = -1
-  let timer: ReturnType<typeof setTimeout> | undefined
-
-  const row = (hit: { title: string; url: string; section: string }, i: number) => {
-    const a = document.createElement('a')
-    a.href = hit.url
-    a.className = 'sp-row block no-underline'
-    a.setAttribute('role', 'option')
-    a.dataset.index = String(i)
-    let n = -1
-    while ((n = list().querySelectorAll('[role="option"]').length) > 0 && false) break
-    const t = document.createElement('span')
-    t.className = 'truncate font-medium'
-    t.textContent = hit.title
-    const m = document.createElement('span')
-    m.className = 'sp-meta'
-    m.textContent = hit.section
-    a.append(t, m)
-    return a
-  }
 
   const render = (hits: any[], note?: string) => {
-    const box = list()
-    box.replaceChildren()
     active = -1
-    if (note) {
-      const p = document.createElement('p')
-      p.className = 'px-3 py-8 text-center text-sm text-slate-500'
-      p.textContent = note
-      box.append(p)
-      return
-    }
-    hits.forEach((hit, i) => box.append(row(hit, i)))
+    renderResults(list(), hits, note, (a, _hit, i) => {
+      a.setAttribute('role', 'option')
+      a.dataset.index = String(i)
+    })
   }
 
   const setActive = (i: number) => {
@@ -83,15 +58,30 @@
     label.className = 'eyebrow px-3 pt-2 pb-1'
     label.textContent = 'Quick links'
     box.append(label)
-    QUICK.forEach((hit, i) => box.append(row(hit, i)))
+    QUICK.forEach((hit, i) => {
+      const a = document.createElement('a')
+      a.href = hit.url
+      a.className = 'sp-row block no-underline'
+      a.setAttribute('role', 'option')
+      a.dataset.index = String(i)
+      const t = document.createElement('span')
+      t.className = 'truncate font-medium'
+      t.textContent = hit.title
+      const m = document.createElement('span')
+      m.className = 'sp-meta'
+      m.textContent = hit.section
+      a.append(t, m)
+      box.append(a)
+    })
   }
 
   const run = async () => {
     const q = input().value.trim()
     if (!q) { renderQuick() ; return }
     const hits = await search(q, 8)
-    render(hits, hits.length ? undefined : 'No results for \u201C' + q + '\u201D.')
+    render(hits, hits.length ? undefined : 'No results for “' + q + '”.')
   }
+  const debouncedRun = debounce(run)
 
   const open = () => {
     const d = dlg()
@@ -127,7 +117,7 @@
   })
 
   document.addEventListener('input', (e) => {
-    if ((e.target as HTMLElement).id === 'sp-input') { clearTimeout(timer); timer = setTimeout(run, 140) }
+    if ((e.target as HTMLElement).id === 'sp-input') debouncedRun()
   })
 
   document.addEventListener('mousemove', (e) => {

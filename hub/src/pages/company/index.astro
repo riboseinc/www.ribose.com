@@ -1,10 +1,9 @@
 ---
 import BaseLayout from '../../layouts/Base.astro'
+import PageHero from '../../components/PageHero.astro'
 ---
 <BaseLayout title="Company" description="Ribose is an open technology company. Team, history, awards, and how we work." path="/company">
-  <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-    <p class="eyebrow">Company</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">Company</h1>
+  <PageHero eyebrow="Company" title="Company" width="prose">
     <p class="prose-news mt-6">
       Ribose builds open-source infrastructure for an interoperable world. Everything we ship is
       open source — from the standards publication platform behind modern SDO workflows to the
@@ -28,5 +27,5 @@ import BaseLayout from '../../layouts/Base.astro'
         </a>
       ))}
     </div>
-  </section>
+  </PageHero>
 </BaseLayout>

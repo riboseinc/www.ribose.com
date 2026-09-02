@@ -1,10 +1,10 @@
 // Wire adapter: projects the wire publisher's output onto Article.
 import { wire } from '../wire'
+import { SITE } from '../seo'
 import type { Article, NewsSource } from '../article'
 
 const asciidoctor = (await import('asciidoctor')).default
 const adoc = asciidoctor()
-const SITE = 'https://www.ribose.com'
 
 export const wireSource: NewsSource = {
   id: 'wire',

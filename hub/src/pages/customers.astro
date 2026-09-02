@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/Base.astro'
 import BrandMark from '../components/BrandMark.astro'
+import PageHero from '../components/PageHero.astro'
 import { clients, partners, supporters } from '../lib/collections'
 import { clientMark } from '../lib/identity'
 
@@ -17,14 +18,7 @@ const logoImg = (c: { name: string; logo: string; logo_dark?: string }) =>
     : 'max-h-10 w-auto max-w-[9rem] object-contain object-left'
 ---
 <BaseLayout title="Customers" description="The standards bodies, governments, and enterprises that rely on Ribose technology." path="/customers">
-  <section class="mx-auto max-w-6xl px-4 pt-16 pb-4 sm:px-6">
-    <p class="eyebrow">Customers</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">The organizations we work for</h1>
-    <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400">
-      From the world's largest standards bodies to national regulators.
-      Many engagements are confidential, so we let the logos speak for themselves.
-    </p>
-  </section>
+  <PageHero eyebrow="Customers" title="The organizations we work for" lede="From the world's largest standards bodies to national regulators. Many engagements are confidential, so we let the logos speak for themselves." />
 
   {groups.map((group) => (
     <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6" aria-labelledby={`group-${group.id}`}>

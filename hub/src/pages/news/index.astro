@@ -4,6 +4,7 @@ import { allArticles, articleKind, type ArticleKind } from '../../lib/newsIndex'
 import type { Article } from '../../lib/article'
 import { productMarkFor } from '../../lib/identity'
 import BrandMark from '../../components/BrandMark.astro'
+import PageHero from '../../components/PageHero.astro'
 
 const all = await allArticles()
 const counts = all.reduce((acc, a) => { acc[articleKind(a)] = (acc[articleKind(a)] ?? 0) + 1; return acc }, {} as Record<ArticleKind, number>)
@@ -20,13 +21,7 @@ const chips = [
 ]
 ---
 <BaseLayout title="News" description="News from across the Ribose technology network and the full archive since 2012." path="/news">
-  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-    <p class="eyebrow">Newsroom</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">News</h1>
-    <p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-400">
-      Corporate announcements, product launches, and standards work — the full press archive
-      since 2012, with product articles republished in full (canonical at their origin site).
-    </p>
+  <PageHero eyebrow="Newsroom" title="News" lede="Corporate announcements, product launches, and standards work — the full press archive since 2012, with product articles republished in full (canonical at their origin site).">
     <div class="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
       <span class="text-slate-500 dark:text-slate-500">Feeds:</span>
       <a href="/news/feed.xml" class="font-semibold text-brand-700 no-underline hover:underline dark:text-brand-400">RSS</a>
@@ -89,7 +84,7 @@ const chips = [
       })}
     </div>
     <p id="news-empty" class="mt-8 hidden text-center text-sm text-slate-500">No articles match. <button type="button" id="news-empty-reset" class="font-semibold text-brand-700 underline underline-offset-4 dark:text-brand-400">Clear filters</button></p>
-  </section>
+  </PageHero>
 
   <script>
     const grid = () => document.getElementById('news-grid')

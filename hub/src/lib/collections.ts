@@ -1,9 +1,9 @@
-import { parse as parseYaml } from 'yaml'
-
 // Legacy collections copied verbatim from the retired Jekyll site
 // (ribosei/www.ribose.com). Frontmatter is data; body text is content;
 // neither is rewritten here. Glob patterns must be literals so Vite can
 // inline the files at build time.
+import { parse as parseYaml } from 'yaml'
+import { readDocs } from './frontmatter'
 export interface CollectionDoc {
   id: string
   frontmatter: Record<string, any>
@@ -24,17 +24,8 @@ const hofFiles = import.meta.glob('../content/hof/hall-of-fame.yaml', {
 }) as Record<string, string>
 import clientsRaw from '../../data/clients.yaml?raw'
 
-const FM_RE = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/
-
 const toDocs = (files: Record<string, string>): CollectionDoc[] =>
-  Object.entries(files).map(([key, raw]) => {
-    const match = raw.match(FM_RE)
-    return {
-      id: key.split('/').pop()!.replace(/\.(adoc|html)$/, ''),
-      frontmatter: match ? (parseYaml(match[1]) ?? {}) : {},
-      body: match ? raw.slice(match[0].length) : raw,
-    }
-  })
+  readDocs(files, (key) => key.split('/').pop()!.replace(/\.(adoc|html)$/, ''))
 
 export const team = (): CollectionDoc[] => toDocs(teamFiles)
 export const advisors = (): CollectionDoc[] => toDocs(advisorFiles)

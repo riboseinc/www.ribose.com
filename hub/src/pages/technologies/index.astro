@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/Base.astro'
 import TechnologyDirectory from '../../components/islands/TechnologyDirectory.vue'
 import { suites, domains, domainById } from '../../lib/registry'
 import { suiteMark } from '../../lib/identity'
+import PageHero from '../../components/PageHero.astro'
 
 const DEPRECATED = new Set(['ribose-platform'])
 const entries = suites.map((suite) => {
@@ -19,12 +20,9 @@ const entries = suites.map((suite) => {
 const domainOptions = domains.filter((d: any) => !d.deprecated).map((d: any) => ({ id: d.id, name: d.name }))
 ---
 <BaseLayout title="Technologies" description="All Ribose open-source suites: standards, modelling, language, fonts, data, graphics, infrastructure, security." path="/technologies">
-  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-    <p class="eyebrow">Products</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">Products</h1>
-    <p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-400">Every product, every domain. {entries.filter((e) => !e.deprecated).length} active products, each with its own organization and community.</p>
+  <PageHero eyebrow="Products" title="Products" lede={`Every product, every domain. ${entries.filter((e) => !e.deprecated).length} active products, each with its own organization and community.`}>
     <div class="mt-8">
       <TechnologyDirectory client:visible suites={entries} domains={domainOptions} />
     </div>
-  </section>
+  </PageHero>
 </BaseLayout>

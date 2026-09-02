@@ -1,5 +1,6 @@
 // ninjs (IPTC News in JSON) projection of the news stream.
-import { newsStream, SITE } from '../../lib/newsStream'
+import { newsStream } from '../../lib/newsStream'
+import { SITE } from '../../lib/seo'
 import type { APIRoute } from 'astro'
 
 export const GET: APIRoute = async () => {
