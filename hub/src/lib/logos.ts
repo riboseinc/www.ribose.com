@@ -48,11 +48,3 @@ export const platformLogoFor = (platformId: string, variant: 'symbol' | 'logo' =
   const dark = variant === 'symbol' ? platformSymbolsDark[platformId] : platformFullsDark[platformId]
   return { light, dark }
 }
-
-// Verified by rendering each symbol on light (#fcfcfa) and dark (#0d1117)
-// backgrounds: plurimath's mark is dark artwork with no dark variant, so it
-// renders as a white monochrome mark in dark mode.
-const SUITE_DARK_MONO = new Set(['plurimath']) // primmel now ships a real dark variant
-
-export const suiteLogoClass = (id: string): string =>
-  SUITE_DARK_MONO.has(id) ? 'dark:brightness-0 dark:invert' : ''

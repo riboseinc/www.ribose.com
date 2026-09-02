@@ -1,14 +1,15 @@
 ---
 import type { Platform } from '../lib/registry'
 import { suitesOfPlatform } from '../lib/registry'
-import PlatformLogo from './PlatformLogo.astro'
+import BrandMark from './BrandMark.astro'
+import { platformMark } from '../lib/identity'
 interface Props { platform: Platform }
 const { platform } = Astro.props
 const members = suitesOfPlatform(platform)
 ---
 <a href={`/platforms/${platform.id}`} class="card group block p-6" transition:name={`platform-${platform.id}`}>
   <div class="flex items-center gap-3">
-    <PlatformLogo platformId={platform.id} imgClass="h-9 w-9 shrink-0" />
+    <BrandMark mark={platformMark(platform.id)} name={platform.name} imgClass="h-9 w-9 shrink-0" fallback="none" />
     <p class="eyebrow text-brand-700 dark:text-brand-400">Platform</p>
   </div>
   <h3 class="h-display mt-2 font-bold text-2xl group-hover:text-brand-700 dark:group-hover:text-brand-300">{platform.name}</h3>

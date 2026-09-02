@@ -2,21 +2,14 @@
 import BaseLayout from '../layouts/Base.astro'
 import PlatformCard from '../components/PlatformCard.astro'
 import ClientWall from '../components/ClientWall.astro'
-import SuiteLogo from '../components/SuiteLogo.astro'
+import BrandMark from '../components/BrandMark.astro'
+import { suiteMark } from '../lib/identity'
 import { platforms, suitesByDomain, domains } from '../lib/registry'
-import { wire } from '../lib/wire'
-import { spokeArticles } from '../lib/newsmlSpoke'
-import { newsPosts } from '../lib/posts'
+import { newsStreamArticles } from '../lib/newsIndex'
 import { t } from '../lib/i18n'
 const byDomain = suitesByDomain()
-const wireLatest = wire().index().slice(0, 3)
-const spokeLatest = (await spokeArticles()).slice(0, 3)
-const fill = newsPosts().slice(0, Math.max(0, 3 - wireLatest.length - spokeLatest.length))
-const latest = [
-  ...wireLatest.map((a) => ({ href: `/news/${a.id.replace(/^urn:ribose:news:/, '').replace(/:/g, '-')}`, date: a.published?.slice(0, 10) ?? '', title: a.headline, origin: a.originSite.replace(/-/g, '.') })),
-  ...spokeLatest.map((s) => ({ href: s.href, date: s.date, title: s.title, origin: s.origin })),
-  ...fill.map((p) => ({ href: `/news/${p.slug}`, date: p.date, title: p.title, origin: 'ribose.com' })),
-].slice(0, 3)
+const latest = (await newsStreamArticles()).slice(0, 3)
+  .map((a) => ({ href: a.href, date: a.date, title: a.title, origin: a.origin }))
 
 const work = [
   { client: 'IETF', title: 'The IETF BibXML service', what: 'Bibliographic infrastructure behind RFC and Internet-Draft authoring, operated in production.' },
@@ -64,7 +57,7 @@ const work = [
         </div>
       </div>
       <div class="flex shrink-0 flex-col items-center gap-3 border-t border-line pt-6 dark:border-slate-800 sm:border-l sm:border-t-0 sm:pl-8 sm:pt-0">
-        <SuiteLogo suite={{ id: 'rnp', name: 'RNP' }} imgClass="h-16 w-16" />
+        <BrandMark mark={suiteMark('rnp', 'RNP')} name="RNP" imgClass="h-16 w-16" />
         <img src="/logos/thunderbird.svg" alt="Mozilla Thunderbird" width="48" height="48" class="h-12 w-12" loading="lazy" />
       </div>
     </div>

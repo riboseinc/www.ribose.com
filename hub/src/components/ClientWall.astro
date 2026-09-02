@@ -1,7 +1,7 @@
 ---
 import { clients } from '../lib/collections'
-import { treatmentFor } from '../lib/logoTreatment'
-import LogoFigure from './LogoFigure.astro'
+import { clientMark } from '../lib/identity'
+import BrandMark from './BrandMark.astro'
 ---
 <section class="border-y border-line py-12 dark:border-slate-800" aria-label="Organizations Ribose works with">
   <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -9,11 +9,10 @@ import LogoFigure from './LogoFigure.astro'
     <ul class="mt-7 flex flex-wrap items-center justify-center gap-x-8 gap-y-5" role="list">
       {clients().map((client) => (
         <li class="transition duration-200 hover:scale-[1.04]">
-          <LogoFigure
-            logo={client.logo}
-            logoDark={client.logo_dark}
+          <BrandMark
+            mark={clientMark(client)}
             name={client.name}
-            imgClass={treatmentFor(client.logo).large
+            imgClass={clientMark(client).treatment === 'large'
               ? 'h-12 w-auto max-w-[9.5rem] object-contain opacity-70 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 dark:opacity-90 dark:grayscale-0 dark:hover:opacity-100'
               : 'h-9 w-auto max-w-[8.5rem] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 dark:opacity-85 dark:grayscale-0 dark:hover:opacity-100'}
           />

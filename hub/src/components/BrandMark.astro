@@ -1,0 +1,37 @@
+---
+// Renders any brand mark correctly in both themes: light/dark pair, the
+// invert fallback for mono marks, and the ink chip for white artwork.
+// Sizing comes from the caller; the mark data comes from lib/identity.
+import type { BrandMark } from '../lib/identity'
+
+interface Props {
+  mark: BrandMark | undefined
+  name: string
+  imgClass?: string
+  /** tile: letter tile when no mark exists · none: render nothing */
+  fallback?: 'tile' | 'none'
+}
+
+const { mark, name, imgClass = '', fallback = 'tile' } = Astro.props
+// A dark-mode variant is its own treatment — only invert mono artwork
+// that has no dark pair.
+const mono = !mark?.dark && mark?.treatment === 'darkMono'
+const monoClass = mono ? 'dark:brightness-0 dark:invert dark:opacity-80' : ''
+const lightInk = !mark?.dark && mark?.treatment === 'lightInk'
+---
+{mark ? (
+  mark.dark ? (
+    <>
+      <img src={mark.light} alt={name} class={`dark:hidden ${imgClass}`} loading="lazy" />
+      <img src={mark.dark} alt={name} class={`hidden dark:block ${imgClass}`} loading="lazy" />
+    </>
+  ) : lightInk ? (
+    <span class="inline-grid place-items-center rounded-md bg-ink p-1.5 dark:bg-transparent dark:p-0">
+      <img src={mark.light} alt={name} class={imgClass} loading="lazy" />
+    </span>
+  ) : (
+    <img src={mark.light} alt={name} class={`${imgClass} ${monoClass}`} loading="lazy" />
+  )
+) : fallback === 'tile' ? (
+  <span class:list={['logo-tile', imgClass]}>{name.slice(0, 1)}</span>
+) : null}

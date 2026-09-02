@@ -1,0 +1,171 @@
+/* ============================================================
+   Reusable component classes — type, buttons, cards, header, palette, prose, chips.
+   ============================================================ */
+
+/* ---------- Type ---------- */
+.h-display {
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.eyebrow {
+  @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500;
+}
+.dark .eyebrow { @apply text-slate-400; }
+
+/* ---------- Buttons ---------- */
+.btn, .btn-solid, .btn-outline, .btn-accent {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold no-underline transition duration-150;
+}
+.btn-solid {
+  @apply bg-ink text-white hover:bg-slate-700 active:translate-y-px;
+}
+.dark .btn-solid { @apply bg-white text-ink hover:bg-slate-200; }
+.btn-outline {
+  @apply border border-slate-300 bg-transparent text-ink hover:border-ink hover:bg-slate-100;
+}
+.dark .btn-outline { @apply border-slate-700 text-slate-100 hover:border-slate-500 hover:bg-white/5; }
+.btn-accent {
+  @apply bg-brand-500 text-white hover:bg-brand-400 active:translate-y-px;
+}
+
+/* ---------- Cards & chips ---------- */
+.card {
+  @apply rounded-2xl border border-line bg-white no-underline transition duration-200;
+}
+.card:hover { @apply border-slate-300 shadow-[0_8px_30px_rgb(0,0,0,0.06)] }
+.dark .card { @apply border-slate-800 bg-ink-2; }
+.dark .card:hover { @apply border-slate-700 shadow-none; }
+
+/* Neutral elevated plate for third-party logos in dark mode.
+   Never a white background: a 6% glass surface with hairline. */
+.chip-logo {
+  @apply rounded-lg transition duration-200;
+}
+.dark .chip-logo {
+  background: rgb(255 255 255 / 0.06);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, var(--color-grad-1, #2864dd) 0%, var(--color-grad-2, #05c7df) 100%);
+}
+
+.logo-tile {
+  @apply grid place-items-center rounded-lg bg-brand-600 text-white;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  @apply border-b border-line/80 bg-paper/85 backdrop-blur-xl;
+}
+.dark .site-header { @apply border-slate-800 bg-ink/85; }
+
+.nav-link {
+  @apply rounded-lg px-3 py-2 text-sm font-medium text-slate-600 no-underline transition hover:bg-slate-100 hover:text-ink;
+}
+.dark .nav-link { @apply text-slate-300 hover:bg-white/5 hover:text-white; }
+.nav-link[aria-current="page"] { @apply bg-slate-100 text-ink; }
+.dark .nav-link[aria-current="page"] { @apply bg-white/10 text-white; }
+
+.icon-btn {
+  @apply grid h-10 w-10 place-items-center rounded-lg text-slate-600 transition hover:bg-slate-100 hover:text-ink;
+}
+.dark .icon-btn { @apply text-slate-300 hover:bg-white/5 hover:text-white; }
+
+.kbd {
+  @apply rounded border border-slate-300 bg-white px-1.5 py-0.5 font-mono text-[10px] font-semibold text-slate-500;
+}
+.dark .kbd { @apply border-slate-700 bg-ink-2 text-slate-400; }
+
+/* ---------- Search palette ---------- */
+.sp-dialog {
+  padding: 0;
+  border: none;
+  background: transparent;
+  max-width: none;
+  max-height: none;
+  overflow: visible;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sp-dialog:not([open]) { display: none; }
+.sp-dialog::backdrop {
+  background: rgb(13 17 23 / 0.55);
+  backdrop-filter: blur(4px);
+}
+.sp-panel {
+  @apply w-[min(92vw,40rem)] overflow-hidden rounded-2xl border border-line bg-white shadow-2xl;
+}
+.dark .sp-panel { @apply border-slate-700 bg-ink-2; }
+.sp-input {
+  @apply w-full bg-transparent text-base text-ink outline-none placeholder:text-slate-400;
+}
+.dark .sp-input { @apply text-slate-100; }
+.sp-row {
+  @apply flex items-baseline gap-3 rounded-lg px-3 py-2.5 text-sm text-slate-700;
+}
+.dark .sp-row { @apply text-slate-300; }
+.sp-row[aria-selected="true"] { @apply bg-brand-50 text-ink; }
+.dark .sp-row[aria-selected="true"] { @apply bg-brand-900/60 text-white; }
+.sp-meta {
+  @apply ml-auto shrink-0 text-[11px] font-semibold uppercase tracking-wider text-slate-400;
+}
+
+/* ---------- Prose (news articles, legal, about) ---------- */
+.prose-news {
+  @apply max-w-none;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  & h2 { @apply mt-12 mb-3 text-[1.55rem] font-bold tracking-tight; }
+  & h3 { @apply mt-8 mb-2 text-xl font-bold tracking-tight; }
+  & p { @apply my-5 text-slate-700; }
+  .dark & p { @apply text-slate-300; }
+  & ul { @apply my-5 list-disc space-y-1.5 pl-6; }
+  & ol { @apply my-5 list-decimal space-y-1.5 pl-6; }
+  & a { @apply text-brand-700 underline underline-offset-4 hover:text-brand-600; }
+  .dark & a { @apply text-brand-300; }
+  & code { @apply rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.9em] text-ink; }
+  .dark & code { @apply bg-slate-800 text-slate-100; }
+  & pre { @apply my-5 overflow-x-auto rounded-xl bg-ink p-4 text-sm leading-6 text-slate-100; }
+  & table { @apply my-6 w-full text-left text-sm; }
+  & th { @apply border-b border-line py-2.5 pr-4 font-semibold; }
+  .dark & th { @apply border-slate-700; }
+  & td { @apply border-b border-line py-2.5 pr-4 align-top; }
+  .dark & td { @apply border-slate-800; }
+  & blockquote { @apply my-6 border-l-[3px] border-brand-400 pl-5 text-slate-600 italic; }
+  .dark & blockquote { @apply text-slate-400; }
+  & img { @apply my-6 rounded-xl; }
+  & hr { @apply my-10 border-line; }
+  .dark & hr { @apply border-slate-800; }
+  & .admonitionblock { @apply my-6 rounded-xl border border-brand-200 bg-brand-50 p-4; }
+  .dark & .admonitionblock { @apply border-brand-900 bg-brand-900/30; }
+}
+/* ---------- Scroll reveal (see Base.astro observer) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+/* ---------- Scrollbars ---------- */
+* { scrollbar-width: thin; scrollbar-color: rgb(0 0 0 / 0.25) transparent; }
+.dark * { scrollbar-color: rgb(255 255 255 / 0.18) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgb(0 0 0 / 0.2); border-radius: 8px; border: 2px solid transparent; background-clip: content-box; }
+.dark ::-webkit-scrollbar-thumb { background: rgb(255 255 255 / 0.15); border-radius: 8px; border: 2px solid transparent; background-clip: content-box; }
+.share-btn {
+  @apply inline-flex h-9 items-center rounded-full border border-line bg-white px-3.5 text-xs font-semibold text-slate-600 no-underline transition hover:border-slate-400 hover:text-ink;
+}
+.dark .share-btn { @apply border-slate-700 bg-ink-2 text-slate-300 hover:border-slate-500 hover:text-white; }
+/* ---------- Arrow micro-interaction ---------- */
+.card .read-arrow { display: inline-block; transition: transform 0.2s ease; }
+.card:hover .read-arrow { transform: translateX(4px); }

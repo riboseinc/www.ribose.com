@@ -1,0 +1,100 @@
+/* ============================================================
+   Design tokens & base — fonts, palette, theme variant, base body rules.
+   ============================================================ */
+
+/* Self-hosted (latin subset) — no third-party font requests. */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inconsolata-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inconsolata-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/source-sans-3-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/source-sans-3-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/source-sans-3-700-normal.woff2') format('woff2');
+}
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================================
+   Ribose design system
+   Ink-and-paper editorial base, one cyan accent, hairline
+   structure. Brand palette ported from the live Jekyll theme
+   (primary #05C7DF, accent #FF6357, Source Sans Pro).
+   ============================================================ */
+@theme {
+  --color-brand-50: #eafcff;
+  --color-brand-100: #cdf6fd;
+  --color-brand-200: #9aebfb;
+  --color-brand-300: #67e0f9;
+  --color-brand-400: #05c7df;
+  --color-brand-500: #04a9c0;
+  --color-brand-600: #038b9e;
+  --color-brand-700: #026d7d;
+  --color-brand-800: #014f5b;
+  --color-brand-900: #013138;
+  --color-accent-400: #ff6357;
+  --color-accent-600: #e04a3f;
+  --color-ink: #0d1117;
+  --color-ink-2: #161b22;
+  --color-paper: #fcfcfa;
+  --color-line: #e5e7ea;
+  --font-sans: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "Inconsolata", ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+html.dark { color-scheme: dark; }
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+  text-rendering: optimizeLegibility;
+}
+.dark body { @apply bg-ink text-slate-200; }
+
+::selection { background: var(--color-brand-200); color: var(--color-ink); }
+.dark ::selection { background: var(--color-brand-800); color: #fff; }
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

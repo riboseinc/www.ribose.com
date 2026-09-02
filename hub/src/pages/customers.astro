@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/Base.astro'
-import LogoFigure from '../components/LogoFigure.astro'
+import BrandMark from '../components/BrandMark.astro'
 import { clients, partners, supporters } from '../lib/collections'
-import { treatmentFor } from '../lib/logoTreatment'
+import { clientMark } from '../lib/identity'
 
 const all = clients()
 const groups = [
@@ -11,8 +11,8 @@ const groups = [
   { id: 'industry', name: 'Industry & institutions' },
 ]
 const byGroup = (id: string) => all.filter((c) => c.group === id)
-const logoImg = (logo: string) =>
-  treatmentFor(logo).large
+const logoImg = (c: { name: string; logo: string; logo_dark?: string }) =>
+  clientMark(c).treatment === 'large'
     ? 'max-h-14 w-auto max-w-[10.5rem] object-contain object-left'
     : 'max-h-10 w-auto max-w-[9rem] object-contain object-left'
 ---
@@ -32,7 +32,7 @@ const logoImg = (logo: string) =>
       <div class="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
         {byGroup(group.id).map((client) => (
           <article class="card reveal flex min-h-28 flex-col justify-between p-5">
-            <LogoFigure logo={client.logo} logoDark={client.logo_dark} name={client.name} imgClass={logoImg(client.logo)} />
+            <BrandMark mark={clientMark(client)} name={client.name} imgClass={logoImg(client)} />
             <p class="mt-3 text-xs font-medium text-slate-500 dark:text-slate-400">{client.name}</p>
           </article>
         ))}
@@ -45,7 +45,7 @@ const logoImg = (logo: string) =>
     <div class="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
       {partners().map((p) => (
         <article class="card reveal flex min-h-28 flex-col justify-between p-5">
-          <LogoFigure logo={p.logo} logoDark={p.logo_dark} name={p.name} imgClass={logoImg(p.logo)} />
+          <BrandMark mark={clientMark(p)} name={p.name} imgClass={logoImg(p)} />
           <p class="mt-3 text-xs font-medium text-slate-500 dark:text-slate-400">{p.name}</p>
         </article>
       ))}
@@ -58,7 +58,7 @@ const logoImg = (logo: string) =>
     <div class="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
       {supporters().map((s) => (
         <article class="card reveal flex min-h-28 flex-col justify-between p-5">
-          <LogoFigure logo={s.logo} logoDark={s.logo_dark} name={s.name} imgClass={logoImg(s.logo)} />
+          <BrandMark mark={clientMark(s)} name={s.name} imgClass={logoImg(s)} />
           <p class="mt-3 text-xs font-medium text-slate-500 dark:text-slate-400">{s.name}</p>
         </article>
       ))}

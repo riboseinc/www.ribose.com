@@ -3,7 +3,8 @@ import BaseLayout from '../../layouts/Base.astro'
 import EdgeLinks from '../../components/EdgeLinks.astro'
 import { platforms, platformById, suitesOfPlatform } from '../../lib/registry'
 import { breadcrumbJsonLd } from '../../lib/seo'
-import PlatformLogo from '../../components/PlatformLogo.astro'
+import BrandMark from '../../components/BrandMark.astro'
+import { platformMark } from '../../lib/identity'
 
 export function getStaticPaths() {
   return platforms.map((platform) => ({ params: { id: platform.id } }))
@@ -22,7 +23,7 @@ const jsonLd = [breadcrumbJsonLd([
   <article class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
     <nav class="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb"><a href="/platforms" class="no-underline hover:text-ink hover:underline dark:hover:text-white">Platforms</a><span aria-hidden="true" class="text-slate-400 dark:text-slate-600">/</span><span>{platform!.name}</span></nav>
     <div transition:name={`platform-${platform!.id}`}>
-      <PlatformLogo platformId={platform!.id} variant="logo" imgClass="mt-6 h-10 w-auto" />
+      <BrandMark mark={platformMark(platform!.id, 'logo')} name={platform!.name} imgClass="mt-6 h-10 w-auto" fallback="none" />
       <p class="eyebrow mt-4 text-brand-700 dark:text-brand-400">{platform!.vendor ?? 'Ribose'} platform</p>
     <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">{platform!.name}</h1>
       <p class="mt-3 text-xl text-slate-600 dark:text-slate-300">{platform!.tagline}</p>

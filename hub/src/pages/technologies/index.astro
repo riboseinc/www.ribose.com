@@ -2,17 +2,20 @@
 import BaseLayout from '../../layouts/Base.astro'
 import TechnologyDirectory from '../../components/islands/TechnologyDirectory.vue'
 import { suites, domains, domainById } from '../../lib/registry'
-import { logoFor, logoDarkFor, suiteLogoClass } from '../../lib/logos'
+import { suiteMark } from '../../lib/identity'
 
 const DEPRECATED = new Set(['ribose-platform'])
-const entries = suites.map((suite) => ({
-  deprecated: DEPRECATED.has(suite.id),
-  id: suite.id, name: suite.name, tagline: suite.tagline,
-  domain: suite.domain, domainName: domainById(suite.domain)?.name ?? suite.domain,
-  logo: logoFor(suite.id), logoDark: logoDarkFor(suite.id), logoClass: suiteLogoClass(suite.id),
-  org: suite.org, softwares: suite.softwares.length,
-  deprecated: DEPRECATED.has(suite.id),
-}))
+const entries = suites.map((suite) => {
+  const mark = suiteMark(suite.id, suite.name)
+  return {
+    deprecated: DEPRECATED.has(suite.id),
+    id: suite.id, name: suite.name, tagline: suite.tagline,
+    domain: suite.domain, domainName: domainById(suite.domain)?.name ?? suite.domain,
+    logo: mark?.light, logoDark: mark?.dark,
+    logoClass: mark?.treatment === 'darkMono' ? 'dark:brightness-0 dark:invert' : '',
+    org: suite.org, softwares: suite.softwares.length,
+  }
+})
 const domainOptions = domains.filter((d: any) => !d.deprecated).map((d: any) => ({ id: d.id, name: d.name }))
 ---
 <BaseLayout title="Technologies" description="All Ribose open-source suites: standards, modelling, language, fonts, data, graphics, infrastructure, security." path="/technologies">

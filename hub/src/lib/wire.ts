@@ -63,29 +63,22 @@ export const wire = (): WireReader => new LocalWireReader()
 // plain HTTPS, caching into the consumer's working directory (the
 // package never writes into itself). Pages switch to it by selecting
 // `WIRE_SOURCE=<url>` at build time; rendering code is unchanged.
-import fs from 'node:fs'
-import path from 'node:path'
-import os from 'node:os'
+import { cachedFetch } from './cachedFetch'
 
 export class HttpWireReader {
   readonly #base: string
-  readonly #cache: string
 
-  constructor(baseUrl: string, cacheDir = '.wire-cache') {
+  constructor(baseUrl: string) {
     this.#base = baseUrl.replace(/\/$/, '')
-    this.#cache = path.join(process.cwd(), cacheDir)
   }
 
   async #fetchCached(rel: string): Promise<string> {
-    const cacheFile = path.join(this.#cache, rel.replace(/^\//, '').replace(/\//g, '__'))
-    if (fs.existsSync(cacheFile)) {
-      return fs.readFileSync(cacheFile, 'utf8')
-    }
-    const response = await fetch(`${this.#base}/${rel.replace(/^\//, '')}`)
-    if (!response.ok) throw new Error(`wire fetch failed: ${rel}: ${response.status}`)
-    const body = await response.text()
-    fs.mkdirSync(this.#cache, { recursive: true })
-    fs.writeFileSync(cacheFile, body)
+    const body = await cachedFetch(
+      `${this.#base}/${rel.replace(/^\//, '')}`,
+      rel.replace(/^\//, '').replace(/\//g, '__'),
+      'wire',
+    )
+    if (body === null) throw new Error(`wire fetch failed: ${rel}`)
     return body
   }
 
