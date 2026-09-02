@@ -36,6 +36,7 @@ const jsonLd = [
   publishedTime={article.date}
   jsonLd={jsonLd}
   canonicalHref={article.origin !== 'ribose.com' ? article.canonical : undefined}
+  lang={article.lang}
 >
   <ArticleShell
     crumbs={[{ href: '/news', label: 'News' }]}

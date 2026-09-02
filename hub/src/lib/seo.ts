@@ -1,27 +1,10 @@
 import { githubOrgs } from './registry'
 
-export interface SeoInput {
-  title: string
-  description: string
-  path?: string
-  type?: 'website' | 'article'
-  publishedTime?: string
-}
-
+// The one canonical site origin (Base.astro derives its URLs from
+// Astro.site; this constant serves the data pipelines).
 export const SITE = 'https://www.ribose.com'
 
 export const canonicalUrl = (pathStr = '/') => new URL(pathStr, SITE).href
-
-export const seoMeta = (input: SeoInput) => ({
-  title: `${input.title} — Ribose`,
-  description: input.description,
-  canonical: canonicalUrl(input.path),
-  og: {
-    title: input.title, description: input.description,
-    url: canonicalUrl(input.path), type: input.type ?? 'website',
-    ...(input.publishedTime ? { publishedTime: input.publishedTime } : {}),
-  },
-})
 
 export const organizationJsonLd = () => ({
   '@context': 'https://schema.org',

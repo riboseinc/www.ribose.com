@@ -1,10 +1,10 @@
 // Post adapter: projects migrated blog posts onto Article.
 import { posts } from '../posts'
+import { SITE } from '../seo'
 import type { Article, NewsSource } from '../article'
 
 const asciidoctor = (await import('asciidoctor')).default
 const adoc = asciidoctor()
-const SITE = 'https://www.ribose.com'
 
 export const postSource: NewsSource = {
   id: 'posts',

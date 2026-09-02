@@ -22,7 +22,7 @@ clients:
   - { id: mozilla, group: industry, logo: mozilla.svg, logo_dark: mozilla-white.svg, name: Mozilla, note: RNP OpenPGP shipped in Thunderbird }
   - { id: nrcan, group: gov, logo: nrcan.svg, logo_dark: nrcan-dark.svg, name: Natural Resources Canada, note: ISO Geodetic Register (isogr) }
   - { id: ign, group: gov, logo: ign.svg, name: IGN France, note: ISO Geodetic Register (isogr) }
-  - { id: expresslang, group: sdo, logo: expresslang.svg, logo_dark: expresslang-dark.svg, name: ExpressLang, note: EXPRESS language community }
+  - { id: expresslang, group: sdo, logo: expresslang.svg, logo_dark: expresslang-dark.svg, name: EXPRESS Language Foundation, note: EXPRESS language community }
   - { id: enosema, group: sdo, logo: enosema.svg, name: Enosema, note: confidential }
   - { id: hkha, group: gov, logo: hkha.svg, logo_dark: hkha-dark.svg, name: Hong Kong Hospital Authority, note: confidential (2019–2020) }
   - { id: hkirc, group: industry, logo: hkirc.svg, logo_dark: hkirc-dark.svg, name: HKIRC, note: DNSSEC guide (2017) }

@@ -3,18 +3,13 @@ import BaseLayout from '../../layouts/Base.astro'
 import SuiteCard from '../../components/SuiteCard.astro'
 import { suites } from '../../lib/registry'
 import { advisories } from '../../lib/advisories'
+import PageHero from '../../components/PageHero.astro'
 
 const securitySuites = suites.filter((s) => s.domain === 'security-compliance')
 const advisoryCount = advisories().length
 ---
 <BaseLayout title="Security" description="Security at Ribose: OpenPGP (RNP), threshold cryptography (Confium), protected text (Engyon), sanction screening (Ammitto), advisories and the CVE program." path="/security">
-  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-    <p class="eyebrow">Security</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">Security, in the open</h1>
-    <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400">
-      Security is not a layer on top of our work — it is the work. The same people who build
-      our platforms run our security program, publish every advisory, and answer every report.
-    </p>
+  <PageHero eyebrow="Security" title="Security, in the open" lede="Security is not a layer on top of our work — it is the work. The same people who build our platforms run our security program, publish every advisory, and answer every report.">
     <p class="mt-3 max-w-2xl text-slate-600 dark:text-slate-400">
       Ribose operates as a CVE Numbering Authority, runs a coordinated disclosure program across
       all ribose.com properties, and maintains the OpenPGP tooling trusted by millions.
@@ -99,5 +94,5 @@ const advisoryCount = advisories().length
         <a href="mailto:security.reports@ribose.com" class="btn-solid">Email the security team</a>
       </div>
     </section>
-  </section>
+  </PageHero>
 </BaseLayout>

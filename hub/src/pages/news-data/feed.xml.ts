@@ -1,5 +1,6 @@
 // Atom feed for the news stream.
-import { newsStream, SITE, escapeXml } from '../../lib/newsStream'
+import { newsStream, escapeXml } from '../../lib/newsStream'
+import { SITE } from '../../lib/seo'
 import type { APIRoute } from 'astro'
 
 export const GET: APIRoute = async () => {

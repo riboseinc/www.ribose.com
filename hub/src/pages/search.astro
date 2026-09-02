@@ -1,11 +1,9 @@
 ---
 import BaseLayout from '../layouts/Base.astro'
+import PageHero from '../components/PageHero.astro'
 ---
 <BaseLayout title="Search" description="Search ribose.com — platforms, technologies, news, and company pages." path="/search">
-  <section class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24">
-    <p class="eyebrow">Search</p>
-    <h1 class="h-display mt-2 text-4xl font-bold">Find anything on ribose.com</h1>
-    <p class="mt-3 text-slate-600 dark:text-slate-400">Platforms, technologies, news, security advisories, and company pages.</p>
+  <PageHero eyebrow="Search" title="Find anything on ribose.com" lede="Platforms, technologies, news, security advisories, and company pages." width="compact">
 
     <div class="mt-8 overflow-hidden rounded-2xl border border-line bg-white shadow-sm dark:border-slate-800 dark:bg-ink-2">
       <div class="flex items-center gap-3 border-b border-line px-4 dark:border-slate-700">
@@ -17,48 +15,23 @@ import BaseLayout from '../layouts/Base.astro'
     </div>
 
     <p class="mt-6 text-xs text-slate-500 dark:text-slate-500">Tip: press <kbd class="kbd">⌘K</kbd> or <kbd class="kbd">/</kbd> anywhere on the site to search.</p>
-  </section>
+  </PageHero>
 
   <script>
-    import { loadPagefind, search } from '../lib/searchCore'
+    import { loadPagefind, search, renderResults, debounce } from '../lib/searchCore'
 
     const input = document.getElementById('page-search-input') as HTMLInputElement
     const list = document.getElementById('page-search-results') as HTMLElement
-    let timer: ReturnType<typeof setTimeout> | undefined
-
-    const render = (hits: any[], note?: string) => {
-      list.replaceChildren()
-      if (note) {
-        const p = document.createElement('p')
-        p.className = 'px-3 py-8 text-center text-sm text-slate-500'
-        p.textContent = note
-        list.append(p)
-        return
-      }
-      hits.forEach((hit) => {
-        const a = document.createElement('a')
-        a.href = hit.url
-        a.className = 'sp-row block no-underline'
-        const t = document.createElement('span')
-        t.className = 'truncate font-medium'
-        t.textContent = hit.title
-        const m = document.createElement('span')
-        m.className = 'sp-meta'
-        m.textContent = hit.section
-        a.append(t, m)
-        list.append(a)
-      })
-    }
-
     const run = async () => {
       const q = input.value.trim()
-      if (!q) { render([], 'Type to search.') ; return }
+      if (!q) { renderResults(list, [], 'Type to search.') ; return }
       const hits = await search(q, 12)
-      render(hits, hits.length ? undefined : 'No results for “' + q + '”.')
+      renderResults(list, hits, hits.length ? undefined : 'No results for “' + q + '”.')
     }
+    const debouncedRun = debounce(run)
 
-    input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(run, 140) })
-    render([], 'Type to search.')
-    loadPagefind().then((pf) => { if (!pf) render([], 'Search index unavailable. Build the site once (npm run build) and reload.') })
+    input.addEventListener('input', debouncedRun)
+    renderResults(list, [], 'Type to search.')
+    loadPagefind().then((pf) => { if (!pf) renderResults(list, [], 'Search index unavailable. Build the site once (npm run build) and reload.') })
   </script>
 </BaseLayout>

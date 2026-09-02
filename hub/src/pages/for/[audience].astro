@@ -6,6 +6,7 @@ import PlatformCard from '../../components/PlatformCard.astro'
 import { platforms } from '../../lib/registry'
 import { breadcrumbJsonLd } from '../../lib/seo'
 import { t } from '../../lib/i18n'
+import PageHero from '../../components/PageHero.astro'
 
 export function getStaticPaths() {
   const audiences = (parseYaml(audiencesRaw) as { audiences: { id: string; name: string; pain: string; answer: string }[] }).audiences
@@ -15,17 +16,14 @@ const { audience } = Astro.props
 const jsonLd = [breadcrumbJsonLd([{ name: 'For ' + audience.name, path: `/for/${audience.id}` }])]
 ---
 <BaseLayout title={`For ${audience.name}`} description={audience.answer} path={`/for/${audience.id}`} jsonLd={jsonLd}>
-  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-    <p class="text-xs font-semibold uppercase tracking-widest text-brand-700 dark:text-brand-400">For</p>
-    <h1 class="mt-2 text-4xl font-bold">{audience.name}</h1>
-    <p class="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-300">{audience.pain}</p>
+  <PageHero eyebrow="For" title={audience.name} lede={audience.pain}>
     <p class="mt-3 max-w-2xl text-lg font-medium">{audience.answer}</p>
     <div class="mt-8 grid gap-4 md:grid-cols-2">
       {platforms.map((platform) => <PlatformCard platform={platform} />)}
     </div>
     <div class="mt-8 flex flex-wrap gap-3">
-      <a href="/technologies" class="rounded-xl bg-brand-700 px-5 py-3 font-medium text-white no-underline hover:bg-brand-800">{t('cta.explore')}</a>
-      <a href="mailto:info@ribose.com" class="rounded-xl border border-slate-300 px-5 py-3 font-medium no-underline dark:border-brand-700">{t('cta.talk')}</a>
+      <a href="/technologies" class="btn-solid">{t('cta.explore')}</a>
+      <a href="mailto:info@ribose.com" class="btn-outline">{t('cta.talk')}</a>
     </div>
-  </section>
+  </PageHero>
 </BaseLayout>
