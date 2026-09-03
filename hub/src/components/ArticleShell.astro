@@ -2,7 +2,7 @@
 // Shared long-form article layout: breadcrumbs, hero meta, sticky table of
 // contents with scroll-spy, reading progress, heading anchors, code copy
 // buttons, and image lightbox (see the script at the end of this file).
-interface Crumb { href: string; label: string }
+import Crumbs, { type Crumb } from './Crumbs.astro'
 interface Props {
   crumbs: Crumb[]
   title: string
@@ -40,14 +40,7 @@ const dateFmt = date ? new Date(date).toISOString().slice(0, 10) : null
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-fill"></div></div>
 
 <article class="mx-auto max-w-6xl px-4 py-12 sm:px-6" lang={lang}>
-  <nav class="flex flex-wrap items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb">
-    {crumbs.map((c, i) => (
-      <>
-        {i > 0 && <span aria-hidden="true" class="text-slate-400 dark:text-slate-600">/</span>}
-        <a href={c.href} class="no-underline hover:text-ink hover:underline dark:hover:text-white">{c.label}</a>
-      </>
-    ))}
-  </nav>
+  <Crumbs items={crumbs} />
 
   <header class="mt-6 max-w-3xl">
     {dateFmt && <time class="eyebrow" datetime={date ?? undefined}>{dateFmt}</time>}

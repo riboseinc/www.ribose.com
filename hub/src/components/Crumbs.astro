@@ -1,0 +1,16 @@
+---
+// One breadcrumb: trail of links with the current page as plain text.
+export interface Crumb { href?: string; label: string }
+interface Props { items: Crumb[] }
+const { items } = Astro.props
+---
+<nav class="flex flex-wrap items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb">
+  {items.map((c, i) => (
+    <>
+      {i > 0 && <span aria-hidden="true" class="text-slate-400 dark:text-slate-600">/</span>}
+      {c.href
+        ? <a href={c.href} class="no-underline hover:text-ink hover:underline dark:hover:text-white">{c.label}</a>
+        : <span aria-current="page">{c.label}</span>}
+    </>
+  ))}
+</nav>

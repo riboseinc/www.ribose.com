@@ -1,16 +1,13 @@
 ---
 import BaseLayout from '../../layouts/Base.astro'
+import PageHero from '../../components/PageHero.astro'
 import { hallOfFame } from '../../lib/collections'
 
 const hof = hallOfFame()
 const years = hof.years_hofs ?? []
 ---
 <BaseLayout title="Security Hall of Fame" description="Researchers who responsibly disclosed issues to Ribose." path="/security/hall-of-fame">
-  <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-    <nav class="text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb"><a href="/security">Security</a> / Hall of Fame</nav>
-    <p class="eyebrow mt-6">Security</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">Security Hall of Fame</h1>
-    <p class="mt-3 text-slate-600 dark:text-slate-400">With thanks to the researchers who have responsibly disclosed issues to Ribose.</p>
+  <PageHero eyebrow="Security" title="Security Hall of Fame" lede="With thanks to the researchers who have responsibly disclosed issues to Ribose." width="prose" crumbs={[{ href: '/security', label: 'Security' }, { label: 'Hall of Fame' }]}>
     <div class="mt-8 space-y-6">
       {years.map((year: any) => (
         <section class="rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-ink-2">
@@ -21,5 +18,5 @@ const years = hof.years_hofs ?? []
         </section>
       ))}
     </div>
-  </section>
+  </PageHero>
 </BaseLayout>

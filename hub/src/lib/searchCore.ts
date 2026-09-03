@@ -72,7 +72,7 @@ const SECTION_LABELS: Record<string, string> = {
   legal: 'Legal',
 }
 
-const sectionOf = (url: string): string => {
+export const sectionOf = (url: string): string => {
   const seg = url.replace(/(^\/|\/$)/g, '').split('/')[0]
   return SECTION_LABELS[seg] ?? 'Page'
 }
