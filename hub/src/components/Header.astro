@@ -1,13 +1,9 @@
 ---
-import { t } from '../lib/i18n'
-const nav = [
-  { href: '/platforms', label: t('nav.platforms') },
-  { href: '/technologies', label: t('nav.technologies') },
-  { href: '/news', label: t('nav.news') },
-  { href: '/customers', label: t('nav.customers') },
-  { href: '/company', label: t('nav.company') },
-  { href: '/security', label: t('nav.security') },
-]
+import { navItems, navLabel } from '../lib/nav'
+import type { Locale } from '../lib/i18n'
+interface Props { lang?: Locale }
+const { lang = 'en' } = Astro.props
+const nav = navItems.map((item) => ({ href: item.href, label: navLabel(item, lang) }))
 const current = Astro.url.pathname
 ---
 <header class="site-header sticky top-0 z-40">

@@ -1,11 +1,7 @@
 ---
 import BaseLayout from '../layouts/Base.astro'
-const links = [
-  { href: '/platforms', label: 'Platforms', desc: 'Metanorma & Primmel Digital CAB' },
-  { href: '/technologies', label: 'Technologies', desc: '36 suites of open source' },
-  { href: '/news', label: 'News', desc: 'Since 2012' },
-  { href: '/company', label: 'Company', desc: 'Team, advisors, awards' },
-]
+import { navItems, navLabel } from '../lib/nav'
+const links = navItems.map((item) => ({ href: item.href, label: navLabel(item), desc: item.desc }))
 ---
 <BaseLayout title="Not found" description="Page not found">
   <section class="relative overflow-hidden">

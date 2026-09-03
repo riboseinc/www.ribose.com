@@ -12,12 +12,12 @@ export interface ContentDoc {
   body: string
 }
 
-const FM_RE = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/
+const FM_RE = /^---\r?\n(?:([\s\S]*?)\r?\n)?---\r?\n?/
 
 export const splitFrontmatter = (raw: string): Pick<ContentDoc, 'frontmatter' | 'body'> => {
   const match = raw.match(FM_RE)
   return {
-    frontmatter: match ? (parseYaml(match[1]) ?? {}) : {},
+    frontmatter: match ? (parseYaml(match[1] ?? '') ?? {}) : {},
     body: match ? raw.slice(match[0].length) : raw,
   }
 }

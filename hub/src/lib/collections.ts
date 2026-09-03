@@ -10,12 +10,6 @@ export interface CollectionDoc {
   body: string
 }
 
-const teamFiles = import.meta.glob('../content/team/*.adoc', {
-  query: '?raw', import: 'default', eager: true,
-}) as Record<string, string>
-const advisorFiles = import.meta.glob('../content/advisors/*.adoc', {
-  query: '?raw', import: 'default', eager: true,
-}) as Record<string, string>
 const awardFiles = import.meta.glob('../content/awards/*.adoc', {
   query: '?raw', import: 'default', eager: true,
 }) as Record<string, string>
@@ -27,8 +21,6 @@ import clientsRaw from '../../data/clients.yaml?raw'
 const toDocs = (files: Record<string, string>): CollectionDoc[] =>
   readDocs(files, (key) => key.split('/').pop()!.replace(/\.(adoc|html)$/, ''))
 
-export const team = (): CollectionDoc[] => toDocs(teamFiles)
-export const advisors = (): CollectionDoc[] => toDocs(advisorFiles)
 export const awards = (): CollectionDoc[] => toDocs(awardFiles)
 
 export const hallOfFame = (): { years_hofs?: { research_heading: string; hofs: string[] }[] } => {

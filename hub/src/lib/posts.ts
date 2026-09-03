@@ -46,8 +46,3 @@ export const posts: readonly Post[] = Object.freeze(
     .sort((a, b) => b.date.localeCompare(a.date)),
 )
 
-export const englishPosts = (): Post[] => posts.filter((p) => p.lang === 'en')
-export const newsPosts = (): Post[] => posts.filter((p) => p.lang === 'en' && !p.archived)
-export const archivePosts = (): Post[] => posts.filter((p) => p.lang === 'en' && !!p.archived)
-export const zhVariantOf = (post: Post): Post | undefined =>
-  posts.find((p) => p.lang === 'zh-hant' && p.slug === post.slug)

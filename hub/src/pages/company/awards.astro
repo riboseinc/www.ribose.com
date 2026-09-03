@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/Base.astro'
+import PageHero from '../../components/PageHero.astro'
 import { awards } from '../../lib/collections'
 
 const Asciidoctor = (await import('asciidoctor')).default
@@ -20,10 +21,7 @@ const docs = awards()
   .sort((a, b) => b.year - a.year)
 ---
 <BaseLayout title="Awards" description="Recognition received by Ribose." path="/company/awards">
-  <section class="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-    <nav class="text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb"><a href="/company">Company</a> / Awards</nav>
-    <p class="eyebrow mt-6">Company</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">Awards</h1>
+  <PageHero eyebrow="Company" title="Awards" crumbs={[{ href: '/company', label: 'Company' }, { label: 'Awards' }]}>
     <div class="mt-8 space-y-4">
       {docs.map((doc) => (
         <article class="rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-ink-2">
@@ -34,5 +32,5 @@ const docs = awards()
         </article>
       ))}
     </div>
-  </section>
+  </PageHero>
 </BaseLayout>

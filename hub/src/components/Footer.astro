@@ -1,15 +1,12 @@
 ---
 import { stats } from '../lib/registry'
+import { navItems, navLabel } from '../lib/nav'
+import type { Locale } from '../lib/i18n'
+interface Props { lang?: Locale }
+const { lang = 'en' } = Astro.props
 const s = stats()
 const year = new Date().getFullYear()
-const siteLinks = [
-  { href: '/platforms', label: 'Platforms' },
-  { href: '/technologies', label: 'Products' },
-  { href: '/news', label: 'News' },
-  { href: '/customers', label: 'Customers' },
-  { href: '/company', label: 'Company' },
-  { href: '/security', label: 'Security' },
-]
+const siteLinks = navItems.map((item) => ({ href: item.href, label: navLabel(item, lang) }))
 const networkLinks = [
   { href: 'https://github.com/riboseinc', label: 'GitHub', external: true },
   { href: '/news/feed.xml', label: 'News feed' },

@@ -1,14 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/Base.astro'
+import PageHero from '../../../components/PageHero.astro'
 import { advisories } from '../../../lib/advisories'
 
 const all = advisories()
 ---
 <BaseLayout title="Security Advisories" description="Ribose security advisories (CVE Numbering Authority)." path="/security/advisories">
-  <section class="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-    <nav class="text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb"><a href="/security">Security</a> / Advisories</nav>
-    <p class="eyebrow mt-6">Security</p>
-    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">Security Advisories</h1>
+  <PageHero eyebrow="Security" title="Security Advisories" crumbs={[{ href: '/security', label: 'Security' }, { label: 'Advisories' }]}>
     <p class="mt-3 text-slate-600 dark:text-slate-400">Ribose is a CVE Numbering Authority. Policy: <a href="/cve-policy">CVE policy</a>.</p>
     <div class="mt-8 space-y-4">
       {all.map((advisory) => (
@@ -19,5 +17,5 @@ const all = advisories()
         </a>
       ))}
     </div>
-  </section>
+  </PageHero>
 </BaseLayout>

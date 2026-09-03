@@ -4,6 +4,7 @@ import EdgeLinks from '../../components/EdgeLinks.astro'
 import { platforms, platformById, suitesOfPlatform } from '../../lib/registry'
 import { breadcrumbJsonLd } from '../../lib/seo'
 import BrandMark from '../../components/BrandMark.astro'
+import Crumbs from '../../components/Crumbs.astro'
 import { platformMark } from '../../lib/identity'
 
 export function getStaticPaths() {
@@ -21,7 +22,7 @@ const jsonLd = [breadcrumbJsonLd([
 ---
 <BaseLayout title={platform!.name} description={platform!.tagline} path={`/platforms/${platform!.id}`} jsonLd={jsonLd}>
   <article class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-    <nav class="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb"><a href="/platforms" class="no-underline hover:text-ink hover:underline dark:hover:text-white">Platforms</a><span aria-hidden="true" class="text-slate-400 dark:text-slate-600">/</span><span>{platform!.name}</span></nav>
+    <Crumbs items={[{ href: '/platforms', label: 'Platforms' }, { label: platform!.name }]} />
     <div transition:name={`platform-${platform!.id}`}>
       <BrandMark mark={platformMark(platform!.id, 'logo')} name={platform!.name} imgClass="mt-6 h-10 w-auto" fallback="none" />
       <p class="eyebrow mt-4 text-brand-700 dark:text-brand-400">{platform!.vendor ?? 'Ribose'} platform</p>

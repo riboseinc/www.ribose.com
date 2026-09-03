@@ -1,18 +1,21 @@
 ---
 // The page-opening rhythm: eyebrow, display title, lede. One type scale,
 // one margin contract — pages pass content, never scaffold.
+import Crumbs, { type Crumb } from './Crumbs.astro'
 interface Props {
   eyebrow: string
   title: string
   lede?: string
   width?: 'default' | 'prose' | 'compact'
+  crumbs?: Crumb[]
 }
-const { eyebrow, title, lede, width = 'default' } = Astro.props
+const { eyebrow, title, lede, width = 'default', crumbs } = Astro.props
 const widthClass =
   width === 'prose' ? 'max-w-3xl' : width === 'compact' ? 'max-w-2xl' : 'max-w-6xl'
 ---
 <section class:list={['mx-auto px-4 py-16 sm:px-6', widthClass]}>
-  <p class="eyebrow">{eyebrow}</p>
+  {crumbs && <Crumbs items={crumbs} />}
+  <p class:list={['eyebrow', crumbs && 'mt-6']}>{eyebrow}</p>
   <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">{title}</h1>
   {lede && <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400">{lede}</p>}
   <slot />

@@ -5,6 +5,7 @@ import SuiteCard from '../../components/SuiteCard.astro'
 import EdgeLinks from '../../components/EdgeLinks.astro'
 import { suites, suiteById, domainById, platformConsumerSuites } from '../../lib/registry'
 import BrandMark from '../../components/BrandMark.astro'
+import Crumbs from '../../components/Crumbs.astro'
 import { suiteMark } from '../../lib/identity'
 import { softwareJsonLd, breadcrumbJsonLd } from '../../lib/seo'
 
@@ -27,7 +28,7 @@ const jsonLd = [
 ---
 <BaseLayout title={suite.name} description={suite.tagline} path={`/technologies/${suite.id}`} jsonLd={jsonLd}>
   <article class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-    <nav class="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400" aria-label="Breadcrumb"><a href="/technologies" class="no-underline hover:text-ink hover:underline dark:hover:text-white">Technologies</a><span aria-hidden="true" class="text-slate-400 dark:text-slate-600">/</span><span>{domain?.name}</span></nav>
+    <Crumbs items={[{ href: '/technologies', label: 'Technologies' }, ...(domain ? [{ label: domain.name }] : [])]} />
     <div class="mt-6 flex flex-wrap items-baseline gap-3" transition:name={`suite-${suite.id}`}>
       <h1 class="h-display text-4xl font-bold sm:text-5xl">{suite.name}</h1>
       {domain && <span class="rounded-full border border-line px-3 py-1 text-sm font-medium text-slate-600 dark:border-slate-700 dark:text-slate-300">{domain.name}</span>}
