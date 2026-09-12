@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Welcome to Ribose Open!"
+date: 2018-07-31 00:00:00
+categories: ribose-open
+featured: true
+author:
+  name: Anton Strogonoff
+  email: anton@strogonoff.name
+excerpt: >-
+  Ribose is launching Ribose Open,
+  a network of sites dedicated to advancing its contributions to the industry
+  in the form of open-source software and specifications.
+---
+
+== What is Ribose?
+
+Ribose is a collaboration platform that focuses on security,
+and is designed with regulated industries
+and users subject to stricter security requirements in mind.
+
+== What is Ribose Open?
+
+Like many others in the industry, at Ribose we choose to give back
+by making reusable and open-sourcing components we use internally
+(such as Riffol [TBD link], our Rust-based init system).
+Since TBD, we also practice OSS-first approach, designing software
+and specifications to be open from the beginning
+(TBD is an example of a project developed that way).
+
+Perhaps somewhat differently from many others, we don’t open just the source code
+of the software we develop, but also specifications, which we believe deserve
+as much attention.
+(At a level higher, Metanorma [TBD link] is an attempt
+to standardize specification preparation and publishing workflows,
+notoriously problematic at organizatios such as IETF [?].)
+
+With quite a few of our initiatives ongoing, we felt the need to organize them,
+to offer more recognition to project maintainers
+and to attract new users and contributors.
+Thus we, not unlike many other industry participants,
+arrived at the concept of a corporate open hub.
+
+Implementation-wise, Ribose Open is a number of interlinked
+and visually congruous sites, with one site being the “hub”
+and offering an index of all software and specifications
+being developed with Ribose’s participation.
+The sites are generated statically using Jekyll,
+with builds triggered by a custom CI system
+(the CI being one component that’s not open at this time).
+
+Like usual, the framework behind Ribose Open is itself open-source
+and designed to be reusable.
+Another post will be dedicated to the concepts and implementation behind Ribose Open
+and how you could make use of it at your organization.
