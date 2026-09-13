@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && node scripts/fix-redirect-stubs.mjs && pagefind --site dist",
     "preview": "astro preview",
     "sync": "bash scripts/sync-data.sh",
     "test": "vitest run"
