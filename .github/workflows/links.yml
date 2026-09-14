@@ -24,6 +24,13 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: hub/package-lock.json
+      - name: Restore wire cache
+        uses: actions/cache@v4
+        with:
+          path: hub/.wire-cache
+          key: wire-${{ github.run_id }}
+          restore-keys: wire-
+
       - run: npm ci
       - run: npm run build
 
