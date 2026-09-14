@@ -58,6 +58,16 @@ const PRODUCT_MARKS: Record<string, BrandMark> = {
     name: 'Ribose',
     light: '/brand/ribose-r.svg',
   },
+  Leptris: {
+    name: 'Leptris',
+    light: '/suites/leptris/symbol.svg',
+    dark: '/suites/leptris/symbol-dark.svg',
+  },
+  Konneal: {
+    name: 'Konneal',
+    light: '/suites/konneal/symbol.svg',
+    dark: '/suites/konneal/symbol-dark.svg',
+  },
 }
 
 export const productMarkFor = (origin: string): BrandMark | undefined =>
