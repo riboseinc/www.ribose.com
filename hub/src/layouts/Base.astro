@@ -21,15 +21,18 @@ const orgJsonLd = (await import('../lib/seo')).organizationJsonLd()
     <ClientRouter />
     <meta charset="utf-8" />
     <script is:inline>(function () {
-      function applyTheme() {
+      var apply = function (el) {
         var t = localStorage.getItem('theme');
         var d = t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.classList.toggle('dark', d);
-      }
-      applyTheme();
-      // ClientRouter swaps in a fresh <html> without the JS-applied class;
-      // re-apply before first paint of the new page.
-      document.addEventListener('astro:after-swap', applyTheme);
+        el.classList.toggle('dark', d);
+      };
+      apply(document.documentElement);
+      // Style the INCOMING document before it replaces the current one.
+      // Re-applying after the swap (astro:after-swap) paints one
+      // unthemed (light) frame first — the dark-mode FOUC.
+      document.addEventListener('astro:before-swap', function (e) {
+        apply(e.newDocument.documentElement);
+      });
     })();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title} — Ribose</title>
