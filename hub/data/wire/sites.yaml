@@ -38,3 +38,11 @@ sites:
     # Static NewsML-G2 spoke feed (TODO.import-network/03); the hub pulls
     # this index and imports full articles at build time.
     newsml: https://www.pubid.com/news-data/newsml.xml
+  - id: leptris-org
+    name: Leptris
+    url: https://www.leptris.org
+    type: project
+    news_path: /blog/
+    # Static NewsML-G2 spoke feed; the hub pulls this index and imports
+    # full articles at build time.
+    newsml: https://www.leptris.org/news-data/newsml.xml
