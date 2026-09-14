@@ -1,6 +1,7 @@
 // Wire adapter: projects the wire publisher's output onto Article.
 import { wire } from '../wire'
 import { SITE } from '../seo'
+import { cachedConvert } from '../renderCache'
 import type { Article, NewsSource } from '../article'
 
 const asciidoctor = (await import('asciidoctor')).default
@@ -17,7 +18,7 @@ export const wireSource: NewsSource = {
         date: a.published ? a.published.slice(0, 10) : '',
         title: full.headline,
         subheadline: full.subheadline,
-        bodyHtml: adoc.convert(full.bodyAdoc, { safe: 'safe' }) as string,
+        bodyHtml: cachedConvert(adoc, 'wire', full.bodyAdoc),
         bodyAdoc: full.bodyAdoc,
         authors: full.authors,
         origin: a.originSite.replace(/-/g, '.'),

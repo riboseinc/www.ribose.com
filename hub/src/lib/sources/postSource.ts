@@ -1,6 +1,7 @@
 // Post adapter: projects migrated blog posts onto Article.
 import { posts } from '../posts'
 import { SITE } from '../seo'
+import { cachedConvert } from '../renderCache'
 import type { Article, NewsSource } from '../article'
 
 const asciidoctor = (await import('asciidoctor')).default
@@ -15,7 +16,7 @@ export const postSource: NewsSource = {
       date: p.date,
       title: p.title,
       subheadline: p.excerpt,
-      bodyHtml: adoc.convert(p.bodyAdoc, { safe: 'safe', doctype: 'book' }) as string,
+      bodyHtml: cachedConvert(adoc, 'posts', p.bodyAdoc, { doctype: 'book' }),
       bodyAdoc: p.bodyAdoc,
       authors: [],
       origin: 'ribose.com',
