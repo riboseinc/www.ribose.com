@@ -25,5 +25,8 @@
   "devDependencies": {
     "pagefind": "^1.4.0",
     "vitest": "^4.1.11"
+  },
+  "overrides": {
+    "fast-xml-parser": "^5.7.0"
   }
 }
