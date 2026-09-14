@@ -68,10 +68,12 @@ suites:
     name: Konneal
     domain: standards
     org: konneal
-    site: https://konneal.github.io
-    tagline: Publisher-agnostic serving layer for standards intelligence
+    site: https://www.konneal.org
+    tagline: Knowledge annealment for standards — measurable, citable, executable
     softwares:
-      - { name: engine, note: "hybrid retrieval, citation-grounded answers, conformance by execution" }
+      - { name: engine, note: "serving layer: hybrid retrieval, citation-grounded answers, conformance by execution" }
+      - { name: client, note: "publisher-site contract with the engine API" }
+      - { name: create-publisher, note: "scaffolds a Konneal publisher deployment from a profile interview" }
 
   - id: geolexica
     name: Geolexica

@@ -7,4 +7,4 @@ Copied by scripts/sync-data.sh -- do not edit here.
 - feeds under /news-data/ and /news/feed.xml are hub-generated endpoints
 - audiences.yaml is hub-owned site content (edited here)
 
-Generated: 2026-09-14T04:07:19Z
+Generated: 2026-09-14T07:37:05Z
