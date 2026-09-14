@@ -64,6 +64,15 @@ suites:
       - { name: concept-browser, note: "browsing UI" }
       - { name: iev, note: "IEV Electropedia access" }
 
+  - id: konneal
+    name: Konneal
+    domain: standards
+    org: konneal
+    site: https://konneal.github.io
+    tagline: Publisher-agnostic serving layer for standards intelligence
+    softwares:
+      - { name: engine, note: "hybrid retrieval, citation-grounded answers, conformance by execution" }
+
   - id: geolexica
     name: Geolexica
     domain: standards
@@ -252,11 +261,17 @@ suites:
     domain: data
     org: leptris
     site: https://www.leptris.org
-    tagline: Ultra-fast XML processing
+    tagline: XML, TOML & YAML at library speed
     softwares:
-      - { name: leptris, note: "XML + XPath in Ruby" }
+      - { name: leptris, note: "C99 XML 1.0 + XPath 1.0 engine" }
+      - { name: teptris, note: "TOML 1.0 parser/writer in C11" }
+      - { name: yeptris, note: "YAML 1.2 parser/writer/streamer in C11" }
+      - { name: leptris-ruby, note: "Ruby bindings" }
+      - { name: teptris-ruby, note: "Ruby bindings" }
+      - { name: yeptris-ruby, note: "Ruby bindings" }
       - { name: leptris-py, note: "Python bindings" }
-      - { name: yeptris, note: "companion tool" }
+      - { name: teptris-py, note: "Python bindings" }
+      - { name: yeptris-py, note: "Python bindings" }
 
   - id: parsanol
     name: Parsanol
@@ -296,6 +311,16 @@ suites:
       - { name: arrolio, note: "layout language + engine over PDF, HTML/CSS, and other backends" }
 
   # ---- infrastructure ----
+  - id: serialbench
+    name: Serialbench
+    domain: infrastructure
+    org: serialbench
+    site: https://serialbench.github.io
+    tagline: Ruby serialization library performance benchmarker
+    softwares:
+      - { name: serialbench, note: "benchmark suite: XML, JSON, YAML, TOML" }
+      - { name: data, note: "append-only benchmark results" }
+
   - id: tebako
     name: Tebako
     domain: infrastructure
