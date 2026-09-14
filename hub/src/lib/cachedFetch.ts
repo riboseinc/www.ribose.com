@@ -6,8 +6,9 @@ import { join, dirname } from 'node:path'
 
 const CACHE_ROOT = join(process.cwd(), '.wire-cache')
 
-// Fetches that failed this build: skip + warn once, not once per page render.
-const failedThisBuild = new Set<string>()
+// Fetches that failed this build: skip + warn once, not once per page
+// render. globalThis because Astro instantiates this module per route.
+const failedThisBuild = ((globalThis as any).__failedFetches ??= new Set<string>())
 
 export const cachedFetch = async (
   url: string,
