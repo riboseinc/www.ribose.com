@@ -32,6 +32,7 @@ const jsonLd = [
     <div class="mt-6 flex flex-wrap items-baseline gap-3" transition:name={`suite-${suite.id}`}>
       <h1 class="h-display text-4xl font-bold sm:text-5xl">{suite.name}</h1>
       {domain && <span class="rounded-full border border-line px-3 py-1 text-sm font-medium text-slate-600 dark:border-slate-700 dark:text-slate-300">{domain.name}</span>}
+      {suite.deprecated && <span class="rounded-full border border-line px-2 py-0.5 text-xs text-slate-400 dark:border-slate-700 dark:text-slate-500">deprecated</span>}
     </div>
     <p class="mt-3 max-w-2xl text-xl text-slate-600 dark:text-slate-300">{suite.tagline}</p>
     <BrandMark mark={suiteMark(suite.id, suite.name)} name={suite.name} imgClass="mt-6 h-14 w-14" />

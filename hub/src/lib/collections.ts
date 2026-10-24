@@ -41,3 +41,8 @@ export interface PartnerOrSupporter {
 const partnerFile = parseYaml(partnersRaw) as { partners: PartnerOrSupporter[]; supporters: PartnerOrSupporter[] }
 export const partners = (): PartnerOrSupporter[] => Object.freeze(partnerFile.partners)
 export const supporters = (): PartnerOrSupporter[] => Object.freeze(partnerFile.supporters)
+
+import audiencesRaw from '../../data/audiences.yaml?raw'
+export interface Audience { id: string; name: string; pain: string; answer: string }
+export const audiences = (): Audience[] =>
+  Object.freeze((parseYaml(audiencesRaw) as { audiences: Audience[] }).audiences)

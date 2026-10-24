@@ -19,7 +19,7 @@ Run inside `hub/` (Node 22, `npm ci`):
 npm run dev      # astro dev server
 npm run build    # astro build && pagefind --site dist
 npm run preview  # serve dist/
-npm run sync     # copy registry/news data from sibling repos (see Data flow)
+npm run sync     # copy wire news data from the sibling wire repo (see Data flow)
 npm test         # vitest run
 ```
 
@@ -27,16 +27,20 @@ npm test         # vitest run
 - The root `package.json` only delegates: `npm run build` at root = `npm --prefix hub run build`. Root `make serve`/`make build` are the deprecated Jekyll path.
 - Search in `npm run dev` needs a prior `npm run build`: the dev server doesn't serve `dist/`, so `astro.config.mjs` proxies `/pagefind/*` to the last built index.
 
-## Data flow — SSOT, never edit `hub/data/`
+## Data flow
 
-`hub/data/` is generated. Sources of truth are sibling repos checked out next to this one:
+The portfolio registry is a **package dependency**, not copied data: `@riboseinc/portfolio`
+is pinned to a git tag of `riboseinc/portfolio` in `hub/package.json`. Its `index.d.ts`
+types are the canonical `Suite`/`Domain`/`Platform` definitions, re-exported by
+`src/lib/registry.ts` — the only module pages may import. Bump the pin when a new
+registry tag is cut; the registry is never edited in this repo.
 
-- `platforms.yaml`, `domains.yaml`, `suites.yaml` ← `riboseinc/portfolio` (`../portfolio`)
-- `wire/*` (sites registry + published news) ← `riboseinc/wire` (`../wire`)
+Wire data (`sites.yaml` + publish output) still comes from the sibling repo
+`riboseinc/wire` (`../wire`) via `hub/scripts/sync-data.sh` (`npm run sync`). CI does
+**not** run sync — it builds from the committed `data/`. Hub-owned site content also
+lives in `data/`: `audiences.yaml`, `clients.yaml`, `partners.yaml`.
 
-`hub/scripts/sync-data.sh` (npm run sync) performs the copy and writes `data/PROVENANCE.md`. CI does **not** run sync — it builds from the committed `data/`. Exception: `data/audiences.yaml` and `data/clients.yaml` are hub-owned site content.
-
-Consumption: `src/lib/registry.ts` inlines registry YAML at build time via `?raw`; `src/lib/wire.ts` implements the wire contract. `src/lib/sources/{post,spoke,wire}Source.ts` are the news source adapters.
+Consumption: `src/lib/registry.ts` imports the `@riboseinc/portfolio` package; `src/lib/wire.ts` implements the wire contract. `src/lib/sources/{post,spoke,wire}Source.ts` are the news source adapters.
 
 ## Architecture notes
 

@@ -2,6 +2,7 @@
 // consume this — a nav change lands everywhere at once and the 404 can
 // never again advertise sections that were removed.
 import { t, type Locale } from './i18n'
+import { platforms } from './registry'
 
 export interface NavItem {
   href: string
@@ -12,7 +13,7 @@ export interface NavItem {
 }
 
 export const navItems: readonly NavItem[] = Object.freeze([
-  { href: '/platforms', key: 'nav.platforms', desc: 'Metanorma & Primmel Digital CAB' },
+  { href: '/platforms', key: 'nav.platforms', desc: platforms.map((p) => p.name).join(' & ') },
   { href: '/technologies', key: 'nav.technologies', desc: 'Our open-source product suites' },
   { href: '/news', key: 'nav.news', desc: 'Press archive since 2012' },
   { href: '/customers', key: 'nav.customers', desc: 'The organizations we work for' },

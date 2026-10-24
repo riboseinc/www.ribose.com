@@ -1,30 +1,18 @@
-import { parse as parseYaml } from 'yaml'
-import suitesRaw from '../../data/suites.yaml?raw'
-import domainsRaw from '../../data/domains.yaml?raw'
-import platformsRaw from '../../data/platforms.yaml?raw'
+import {
+  domains as registryDomains,
+  platforms as registryPlatforms,
+  suites as registrySuites,
+} from '@riboseinc/portfolio'
 
-export interface Software { name: string; note?: string }
-export interface Suite {
-  id: string; name: string; domain: string; org: string
-  site?: string; tagline: string; powers?: string[]; uses?: string[]
-  curated?: boolean; softwares: Software[]
-}
-export interface Domain { id: string; name: string; description: string }
-export interface PlatformEdition { id: string; name: string; description: string }
-export interface Platform {
-  id: string; name: string; vendor?: string; tagline: string; story: string
-  core?: string; suites: string[]; builds_on?: string; editions?: PlatformEdition[]
-}
+// Types live with the data (SSOT: riboseinc/portfolio).
+export type { Domain, Platform, PlatformEdition, Software, Suite } from '@riboseinc/portfolio'
+import type { Domain, Platform, Suite } from '@riboseinc/portfolio'
 
-// Registries are inlined at build time from the synced data directory
-// (SSOT: riboseinc/portfolio; see scripts/sync-data.sh).
-const suitesFile = parseYaml(suitesRaw) as { suites: Suite[] }
-const domainsFile = parseYaml(domainsRaw) as { domains: Domain[] }
-const platformsFile = parseYaml(platformsRaw) as { platforms: Platform[] }
-
-export const suites: readonly Suite[] = Object.freeze(suitesFile.suites)
-export const domains: readonly Domain[] = Object.freeze(domainsFile.domains)
-export const platforms: readonly Platform[] = Object.freeze(platformsFile.platforms)
+// The hub's stable query surface over the registry package; pages and
+// components consume only this module, never the package directly.
+export const suites: readonly Suite[] = Object.freeze([...registrySuites])
+export const domains: readonly Domain[] = Object.freeze([...registryDomains])
+export const platforms: readonly Platform[] = Object.freeze([...registryPlatforms])
 
 export const suitesByDomain = (): Map<string, Suite[]> => {
   const map = new Map<string, Suite[]>()

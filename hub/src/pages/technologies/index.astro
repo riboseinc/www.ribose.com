@@ -5,11 +5,10 @@ import { suites, domains, domainById } from '../../lib/registry'
 import { suiteMark } from '../../lib/identity'
 import PageHero from '../../components/PageHero.astro'
 
-const DEPRECATED = new Set(['ribose-platform'])
 const entries = suites.map((suite) => {
   const mark = suiteMark(suite.id, suite.name)
   return {
-    deprecated: DEPRECATED.has(suite.id),
+    deprecated: Boolean(suite.deprecated) || Boolean(domainById(suite.domain)?.deprecated),
     id: suite.id, name: suite.name, tagline: suite.tagline,
     domain: suite.domain, domainName: domainById(suite.domain)?.name ?? suite.domain,
     logo: mark?.light, logoDark: mark?.dark,

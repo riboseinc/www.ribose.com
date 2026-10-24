@@ -1,16 +1,14 @@
 ---
-import { parse as parseYaml } from 'yaml'
-import audiencesRaw from '../../../data/audiences.yaml?raw'
 import BaseLayout from '../../layouts/Base.astro'
 import PlatformCard from '../../components/PlatformCard.astro'
+import { audiences } from '../../lib/collections'
 import { platforms } from '../../lib/registry'
 import { breadcrumbJsonLd } from '../../lib/seo'
 import { t } from '../../lib/i18n'
 import PageHero from '../../components/PageHero.astro'
 
 export function getStaticPaths() {
-  const audiences = (parseYaml(audiencesRaw) as { audiences: { id: string; name: string; pain: string; answer: string }[] }).audiences
-  return audiences.map((audience) => ({ params: { audience: audience.id }, props: { audience } }))
+  return audiences().map((audience) => ({ params: { audience: audience.id }, props: { audience } }))
 }
 const { audience } = Astro.props
 const jsonLd = [breadcrumbJsonLd([{ name: 'For ' + audience.name, path: `/for/${audience.id}` }])]
