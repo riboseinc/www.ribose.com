@@ -10,11 +10,10 @@ on:
 
 jobs:
   build:
-    name: Build and deploy hub
+    name: Build and deploy
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: hub
     environment:
       name: ${{ github.ref == 'refs/heads/main' && 'production' || 'staging' }}
       url: ${{ github.ref == 'refs/heads/main' && 'https://www.ribose.com' || 'https://staging.ribose.com' }}
@@ -26,12 +25,12 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-          cache-dependency-path: hub/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Restore wire cache
         uses: actions/cache@v4
         with:
-          path: hub/.wire-cache
+          path: .wire-cache
           key: wire-${{ github.run_id }}
           restore-keys: wire-
 
