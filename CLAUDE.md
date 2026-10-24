@@ -19,7 +19,6 @@ Run inside `hub/` (Node 22, `npm ci`):
 npm run dev      # astro dev server
 npm run build    # astro build && pagefind --site dist
 npm run preview  # serve dist/
-npm run sync     # copy wire news data from the sibling wire repo (see Data flow)
 npm test         # vitest run
 ```
 
@@ -29,16 +28,16 @@ npm test         # vitest run
 
 ## Data flow
 
-The portfolio registry is a **package dependency**, not copied data: `@riboseinc/portfolio`
-is pinned to a git tag of `riboseinc/portfolio` in `hub/package.json`. Its `index.d.ts`
-types are the canonical `Suite`/`Domain`/`Platform` definitions, re-exported by
-`src/lib/registry.ts` — the only module pages may import. Bump the pin when a new
-registry tag is cut; the registry is never edited in this repo.
+Two package dependencies, no copied data, both pinned to git tags of sibling repos:
 
-Wire data (`sites.yaml` + publish output) still comes from the sibling repo
-`riboseinc/wire` (`../wire`) via `hub/scripts/sync-data.sh` (`npm run sync`). CI does
-**not** run sync — it builds from the committed `data/`. Hub-owned site content also
-lives in `data/`: `audiences.yaml`, `clients.yaml`, `partners.yaml`.
+- `@riboseinc/portfolio` (`riboseinc/portfolio`) — the registry (platforms/domains/suites).
+  Canonical `Suite`/`Domain`/`Platform` types live in the package; `src/lib/registry.ts`
+  is the only module pages may import. Bump the pin when a registry tag is cut.
+- `@riboseinc/wire` (`riboseinc/wire`) — published news output (`index-full.json`) and the
+  sites registry, consumed by `src/lib/wire.ts` and `src/lib/sources/spokeSource.ts`.
+
+Nothing in this repo mirrors their data. Hub-owned site content lives in `data/`:
+`audiences.yaml`, `clients.yaml`, `partners.yaml`, `legacy-blog-redirects.json`.
 
 Consumption: `src/lib/registry.ts` imports the `@riboseinc/portfolio` package; `src/lib/wire.ts` implements the wire contract. `src/lib/sources/{post,spoke,wire}Source.ts` are the news source adapters.
 

@@ -1,9 +1,10 @@
+import wireIndex from '@riboseinc/wire'
 import { parse as parseYaml } from 'yaml'
-import indexRaw from '../../data/wire/publish/news.json?raw'
 
-// The wire reader contract. LocalAdapter consumes the synced publish
-// output inlined at build time; the HTTP adapter at cutover implements
-// the same interface against the live news host -- pages never change.
+// The wire reader contract. LocalAdapter consumes the published wire
+// output inlined at build time from the @riboseinc/wire package; the
+// HTTP adapter at cutover implements the same interface against the
+// live news host -- pages never change.
 export interface WireArticle {
   id: string; version: number; status: string; headline: string
   language: string; originSite: string; canonical: string; path: string
@@ -21,38 +22,23 @@ export interface WireReader {
   article(entry: WireArticle): WireArticleFull
 }
 
-const itemYamls = import.meta.glob('../../data/wire/publish/articles/**/item.yaml', {
-  query: '?raw', import: 'default', eager: true,
-}) as Record<string, string>
-const bodyAdocs = import.meta.glob('../../data/wire/publish/articles/**/body.adoc', {
-  query: '?raw', import: 'default', eager: true,
-}) as Record<string, string>
-
-const findKey = (map: Record<string, string>, suffix: string): string | undefined =>
-  Object.keys(map).find((key) => key.includes(suffix))
+const fullIndex = wireIndex as { generatedAt: string; articles: WireArticleFull[] }
+const articleByPath = new Map(fullIndex.articles.map((a) => [a.path, a]))
 
 export class LocalWireReader implements WireReader {
   index(): WireArticle[] {
-    const parsed = JSON.parse(indexRaw) as { generatedAt: string; articles: WireArticle[] }
-    return parsed.articles
+    return fullIndex.articles
   }
 
   article(entry: WireArticle): WireArticleFull {
-    const itemKey = findKey(itemYamls, entry.path)
-    const bodyKey = findKey(bodyAdocs, entry.path)
-    if (!itemKey || !bodyKey) throw new Error(`wire article files missing for ${entry.id}`)
-    const envelope = parseYaml(itemYamls[itemKey]) as any
+    const full = articleByPath.get(entry.path)
+    if (!full) throw new Error(`wire article missing for ${entry.id}`)
     return {
-      ...entry,
-      subheadline: envelope.subheadline?.content,
-      bodyAdoc: bodyAdocs[bodyKey],
-      authors: envelope.authors ?? [],
-      media: (envelope.media ?? []).map((m: any) => ({
-        id: m.id,
+      ...full,
+      media: full.media.map((m) => ({
+        ...m,
         href: `/news-data/${entry.path.replace(/\/$/, '')}/${m.href}`.replace(/\/+/g, '/'),
-        credit: m.credit, alt: m.altText?.content,
       })),
-      dateline: envelope.dateline,
     }
   }
 }

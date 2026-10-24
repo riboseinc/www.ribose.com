@@ -2,18 +2,14 @@
 // (cache-first) and projects their items onto Article.
 import { parse as parseYaml } from 'yaml'
 import { parseNewsMessage, parseNewsItem } from 'newsmlg2-ts'
+import sitesYaml from '@riboseinc/wire/sites?raw'
 import { cachedFetch } from '../cachedFetch'
 import type { Article, NewsSource } from '../article'
 
 interface SpokeSite { id: string; name: string; url: string; newsml?: string }
 
-const registryRaw = import.meta.glob('../../../data/wire/sites.yaml', {
-  eager: true, import: 'default', query: '?raw',
-}) as Record<string, string>
-
 const spokeSites = (): SpokeSite[] => {
-  const raw = Object.values(registryRaw)[0] ?? ''
-  const sites = (parseYaml(raw) as { sites?: SpokeSite[] }).sites ?? []
+  const sites = (parseYaml(sitesYaml) as { sites?: SpokeSite[] }).sites ?? []
   return sites.filter((s) => s.newsml)
 }
 
