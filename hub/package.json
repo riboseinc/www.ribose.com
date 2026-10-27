@@ -15,7 +15,7 @@
     "@astrojs/vue": "^7.0.1",
     "@tailwindcss/vite": "^4.3.2",
     "asciidoctor": "^3.0.0",
-    "astro": "^7.0.7",
+    "astro": "^7.4.2",
     "newsmlg2-ts": "github:lutaml/newsmlg2-ts",
     "tailwindcss": "^4.3.2",
     "vite": "^8.1.4",
