@@ -21,6 +21,10 @@ export interface Article {
   /** absolute canonical URL (points at the spoke for imported articles) */
   canonical: string
   lang: string
+  /** stable story identifier shared by every language edition */
+  story: string
+  /** other-language editions of the same story */
+  translations?: { lang: string; href: string }[]
   archived?: boolean
   media?: { href: string; alt?: string; credit?: string }[]
   dateline?: { place?: string; country?: string; date?: string }

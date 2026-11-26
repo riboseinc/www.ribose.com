@@ -22,6 +22,7 @@ export const postSource: NewsSource = {
       origin: 'ribose.com',
       canonical: `${SITE}/news/${p.slug}`,
       lang: p.lang,
+      story: p.slug,
       archived: p.archived,
     }))
   },

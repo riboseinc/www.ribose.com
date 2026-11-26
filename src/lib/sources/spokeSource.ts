@@ -46,6 +46,7 @@ export const spokeSource: NewsSource = {
         bodyHtml = bodyHtml.replace(/(href|src)="\/(?!\/)/g, `$1="${site.url}/`)
         out.push({
           urn: item.itemMeta.guid,
+          story: item.itemMeta.guid,
           href: `/news/${seg.join('-')}`,
           date,
           title: full.contentMeta?.headline ?? item.contentMeta?.headline ?? slug,

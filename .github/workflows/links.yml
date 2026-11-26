@@ -44,6 +44,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           args: >-
             --verbose --no-progress --cache --max-cache-age 1d
+            --fallback-extensions html
             --base "$PWD/dist"
             'dist/**/*.html'
           fail: true

@@ -14,6 +14,7 @@ export const wireSource: NewsSource = {
       const full = wire().article(a)
       return {
         urn: a.id,
+        story: a.id,
         href: `/news/${a.id.replace(/^urn:ribose:news:/, '').replace(/:/g, '-')}`,
         date: a.published ? a.published.slice(0, 10) : '',
         title: full.headline,
