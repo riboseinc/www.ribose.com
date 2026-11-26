@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../../layouts/Base.astro'
-import { allArticles, articleKind, type ArticleKind } from '../../lib/newsIndex'
+import { indexArticles, articleKind, type ArticleKind } from '../../lib/newsIndex'
 import type { Article } from '../../lib/article'
 import { productMarkFor } from '../../lib/identity'
 import BrandMark from '../../components/BrandMark.astro'
 import PageHero from '../../components/PageHero.astro'
 
-const all = await allArticles()
+const all = await indexArticles()
 const counts = all.reduce((acc, a) => { acc[articleKind(a)] = (acc[articleKind(a)] ?? 0) + 1; return acc }, {} as Record<ArticleKind, number>)
 const archiveCount = counts.archive ?? 0
 const years = [...new Set(all.map((a) => a.date.slice(0, 4)))].sort((a, b) => b.localeCompare(a))
