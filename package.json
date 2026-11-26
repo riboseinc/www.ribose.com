@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "pagefind": "^1.4.0",
+    "playwright": "^1.65.1",
     "vitest": "^4.1.11"
   },
   "overrides": {
