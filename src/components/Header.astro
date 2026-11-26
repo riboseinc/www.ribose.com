@@ -5,6 +5,7 @@ interface Props { lang?: Locale }
 const { lang = 'en' } = Astro.props
 const nav = navItems.map((item) => ({ href: item.href, label: navLabel(item, lang) }))
 const current = Astro.url.pathname
+const onNews = current.startsWith('/news')
 ---
 <header class="site-header sticky top-0 z-40">
   <div class="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4 sm:px-6">
@@ -24,6 +25,18 @@ const current = Astro.url.pathname
     </nav>
 
     <div class="ml-auto flex items-center gap-1.5">
+      {onNews && (
+        <div class="relative">
+          <button id="lang-toggle" type="button" class="icon-btn border border-slate-200 dark:border-slate-800" aria-label="Language" aria-expanded="false" aria-controls="lang-menu" data-pagefind-ignore>
+            <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.5 2.6 4 6 4 10s-1.5 7.4-4 10c-2.5-2.6-4-6-4-10s1.5-7.4 4-10z"/></svg>
+          </button>
+          <div id="lang-menu" class="hidden absolute right-0 top-12 z-50 w-44 overflow-hidden rounded-xl border border-line bg-white py-2 shadow-xl dark:border-slate-800 dark:bg-ink-2">
+            <a href="/news/" class="block px-4 py-2 text-sm no-underline hover:bg-slate-100 dark:hover:bg-slate-800" hreflang="en">English</a>
+            <a href="/news/zh-hant/" class="block px-4 py-2 text-sm no-underline hover:bg-slate-100 dark:hover:bg-slate-800" hreflang="zh-Hant">繁體中文</a>
+            <a href="/news/zh-hans/" class="block px-4 py-2 text-sm no-underline hover:bg-slate-100 dark:hover:bg-slate-800" hreflang="zh-Hans">简体中文</a>
+          </div>
+        </div>
+      )}
       <button type="button" data-search-toggle class="group flex h-10 items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 text-sm font-medium text-slate-500 transition hover:border-slate-300 hover:text-ink dark:border-slate-800 dark:bg-ink-2 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-white" aria-label="Search" data-pagefind-ignore>
         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
         <span class="hidden sm:inline">Search</span>
@@ -71,6 +84,17 @@ const current = Astro.url.pathname
         var nav = document.getElementById('mobile-nav')
         var open = nav.classList.toggle('hidden') === false
         menuBtn.setAttribute('aria-expanded', String(open))
+        return
+      }
+      var langBtn = e.target.closest('#lang-toggle')
+      var langMenu = document.getElementById('lang-menu')
+      if (langMenu) {
+        if (langBtn) {
+          var open = langMenu.classList.toggle('hidden') === false
+          langBtn.setAttribute('aria-expanded', String(open))
+        } else if (!e.target.closest('#lang-menu')) {
+          langMenu.classList.add('hidden')
+        }
       }
     })
   }
