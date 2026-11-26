@@ -14,8 +14,6 @@ on:
 jobs:
   link_checker:
     runs-on: ubuntu-latest
-    defaults:
-      run:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
