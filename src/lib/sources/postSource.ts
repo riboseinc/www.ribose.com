@@ -12,7 +12,7 @@ export const postSource: NewsSource = {
   articles(): Article[] {
     return posts.map((p) => ({
       urn: `urn:ribose:news:${p.slug}`,
-      href: `/news/${p.lang === 'zh-hant' ? `zh-hant/` : ''}${p.slug}`,
+      href: `/news/${p.lang === 'en' ? '' : `${p.lang}/`}${p.slug}`,
       date: p.date,
       title: p.title,
       subheadline: p.excerpt,
@@ -20,7 +20,7 @@ export const postSource: NewsSource = {
       bodyAdoc: p.bodyAdoc,
       authors: [],
       origin: 'ribose.com',
-      canonical: `${SITE}/news/${p.slug}`,
+      canonical: `${SITE}/news/${p.lang === 'en' ? '' : `${p.lang}/`}${p.slug}`,
       lang: p.lang,
       story: p.slug,
       archived: p.archived,
