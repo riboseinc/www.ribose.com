@@ -1,0 +1,37 @@
+---
+layout: post
+title: "擎威 Ribose 获得 Red Herring 2015 亚洲百大奖"
+date: 2015-09-22 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 获得 Red Herring 2015 亚洲百大奖
+---
+= 擎威 Ribose 获得 Red Herring 2015 亚洲百大奖
+
+*首家获得此项殊荣的安全云端协作公司*
+
+[香港] -- 2015年9月21日 -- 云端协作平台提供商擎威 Ribose 获得全球媒体集团 Red Herring 颁发的 2015 年亚洲百大奖（
+http://www.redherring.com/events/red-herring-asia/[Red Herring 2015 Top 100 Asia]）。Ribose 是首家获得此项殊荣的安全云端协作公司。
+
+Red Herring's Top 100 Asia 是对该地区最有前途的私营科技企业的高度认可。该名单已成为新兴公司和企业家的卓越标志，Ribose 加入了包括 Google、Facebook、Kakao、Twitter、Rakuten、Salesforce.com、Xiaomi 和 YouTube 在内的知名前 Top 100 获奖者行列。
+
+Ribose 的获奖云端协作平台使协作技术民主化——以前仅大型企业和政府机构才能负担得起——通过将世界级的安全性和技术交到所有用户手中。Ribose 的平台因其技术和商业世界的关注而被 Fortune 和 TechTarget 报导。
+
+无论身在何处，Ribose 平台都能提供企业级的服务可靠性，并遵循国际治理和安全标准，让用户安心专注于手头的工作。Ribose 采取「最高标准」的云端安全策略，为所有用户提供世界上最严格的安全要求，且完全免费。
+
+每年从亚洲数百家公司中选出，Red Herring 编辑团队挑选最具创新性的候选公司进行进一步评估。提名公司将根据财务表现、技术创新、管理质量、策略执行和行业整合等定量和定性标准进行评估。Ribose 在 2015 年 9 月 14-16 日 在马尼拉举行的 Red Herring Asia Forum
+向评审展示其安全云端协作平台后被评为获奖者。
+
+Alex Vieux，Red Herring 出版人兼 CEO，表示：「从数百家来自整个亚洲的公司中选出最具潜力的公司绝非易事。经过严格的考虑和讨论，我们从数百家候选公司中缩小到 100 家获奖者。Ribose 专注于云安全、数据隐私和管理标准，体现了成功创业企业的愿景、动力和创新。」
+
+Vieux 先生解释：「Ribose 通过为所有用户提供企业级协作技术和世界级安全性，完全免费地改变了云协作领域的格局。通过提供工具，使个人和团队能够超越时间和物理位置的限制无缝协作，Ribose 创建了一个真正值得被列入 Red Herring 亚洲百大公司的平台，从而加入了科技行业领导者和创新者的杰出名单。」
+
+擎威 Ribose 的创办人 Ronald Tse 补充道：「Ribose 很高兴能够获得 Red Herring 2015 亚洲百大奖。我们与今年竞争的众多成功的私人公司并列，对评审对我们使命的认可以及对我们团队奉献精神的认可表示衷心的感谢。」
+
+「当今世界越来越全球化；人们变得更加互联；创新和发明越来越多地来自跨越全球的多学科工作。通过促进团队合作和协作，Ribose 正在赋能全球的企业家和发明家共同努力，造福未来的世代。」
+
+「我们要感谢 Alex 和 Red Herring 团队，感谢他们的远见卓识，识别出世界上最有前途的新兴科技先锋。这个奖项对我们 Ribose 团队来说是一个巨大的荣誉和鼓舞，激励我们继续推进我们的使命，为所有用户带来世界级、高度安全的协作技术。」

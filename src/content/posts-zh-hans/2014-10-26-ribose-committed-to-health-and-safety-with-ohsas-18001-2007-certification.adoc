@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Ribose committed to health and safety with OHSAS 18001:2007 certification"
+date: 2014-10-26 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose committed to health and safety with OHSAS 18001:2007 certification
+---
+= Ribose committed to health and safety with OHSAS 18001:2007 certification
+
+*Hong Kong, 27 October 2014 --* http://www.ribose.com[Ribose] has
+achieved certification to the
+http://www.bsigroup.com/en-GB/ohsas-18001-occupational-health-and-safety/[OHSAS
+18001:2007] international standard for occupational health and safety
+management systems. OHSAS 18001:2007 promotes healthy and safe working
+environments by setting out international best practices -- helping
+organizations manage and control risks, and continuously improve
+performance.
+
+Ribose's OHSAS 18001 certification was awarded by
+http://www.bsigroup.com[BSI (British Standards Institution)] -- who
+established the British Standard BS OHSAS 18001:2007 -- after validation
+of Ribose's applications, systems, processes and services by an
+independent accredited auditor.
+
+"`Our staff are the heart of our company, and their wellbeing is our top
+priority,`" explained Ribose founder Ronald Tse. "`Achieving OHSAS 18001
+certification demonstrates the sincerity of Ribose's commitment to
+health and safety, and provides us with a framework for constant
+improvement.`"
+
+"`Offices tend to be low-risk environments and health and safety risks
+are often overlooked in the technology industry -- however repetitive
+strain injuries and back injuries are quite common,`" Tse noted. "`Having
+formal health and safety measures in place increases our efficiency and
+reduces costs in the long run by avoiding accidents, reducing illness
+and improving staff motivation. Implementing OHSAS 18001 standards has
+allowed us to thoroughly consider health and safety issues in a holistic
+way across the entire organization.`"
+
+Emmanuel Herve, Managing Director of BSI Hong Kong, commented, "`Many
+people associate construction and manufacturing with high risks, but
+wellness and safety considerations apply to all industries -- including
+office-based environments. By achieving OHSAS 18001 certification,
+Ribose is taking responsibility for the wellbeing of its staff and
+customers, setting a robust example for the technology industry.`"

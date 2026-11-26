@@ -1,0 +1,23 @@
+---
+layout: post
+title: "擎威 Ribose 现已进入私人测试阶段"
+date: 2012-05-28 00:00:00
+categories: ribose
+lang: zh-hans
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 现已进入私人测试阶段
+archived: true
+---
+= 擎威 Ribose 现已进入私人测试阶段
+
+为提供最佳协作体验，
+目前每个用户帐户的邀请数量设有上限。
+若您希望发送更多邀请以与更多人协作，
+请透过启动列上的「提供意见回馈」选单联络我们。
+感谢您的支持！
+
+擎威 Ribose 团队

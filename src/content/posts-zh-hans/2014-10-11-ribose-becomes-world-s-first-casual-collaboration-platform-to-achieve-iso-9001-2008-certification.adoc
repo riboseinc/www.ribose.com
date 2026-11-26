@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Ribose becomes world's first casual collaboration platform to achieve ISO 9001:2008 certification"
+date: 2014-10-11 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose becomes world's first casual collaboration platform to achieve ISO 9001:2008 certification
+---
+= Ribose becomes world's first casual collaboration platform to achieve ISO 9001:2008 certification
+
+*Achieves internationally recognized standard for quality management
+systems *
+
+*Hong Kong, 13 October 2014* -- http://www.ribose.com[Ribose] has become
+the world's first casual collaboration platform to be awarded the
+http://www.iso.org/iso/iso_9000[ISO 9001:2008] certification for
+international quality management systems.
+
+ISO 9001 is the world's most widely recognized standard for quality
+management systems. This latest certification verifies Ribose's ability
+to consistently meet the needs of customers and other key stakeholders
+in both the delivery and continuous improvement of products and
+services.
+
+Ribose's certification -- awarded by http://www.bsigroup.com[BSI (British
+Standards Institution)], the originator of the ISO 9001 standard --
+covers all processes within the company, ranging from the design and
+development of services to ongoing customer support for the company's
+online collaboration platform. Ribose's adoption of ISO 9001:2008
+standards will help ensure customers receive consistently high-quality
+products and services as the company continues to grow. 
+
+"`Ribose is committed to helping people work together more effectively
+and efficiently,`" said Ronald Tse, founder of Ribose. "`Quality
+improvement has always been a cornerstone of that commitment -- which is
+why our ISO 9001:2008 certification represents a powerful validation of
+our systematic framework for service improvement, and the effectiveness
+of our information security, business continuity and management
+systems.`"
+
+BSI awarded Ribose the ISO 9001:2008 certification after validation of
+all applications, systems, processes and services within the company by
+an independent accredited auditor.
+
+"`As the world's most widely adopted quality management system
+certification standard, ISO 9001 represents a badge of confidence
+between customers and companies,`" said Emmanuel Herve, Managing Director
+of BSI Hong Kong. "`Ribose's certification demonstrates its firm
+commitment to delivering quality services which help people work
+together better.`"

@@ -1,0 +1,58 @@
+---
+layout: post
+title: "Ribose awarded PAS 99 certification for integrated management systems"
+date: 2014-06-16 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose awarded PAS 99 certification for integrated management systems
+---
+= Ribose awarded PAS 99 certification for integrated management systems
+
+*Ribose* *awarded PAS 99 certification for integrated management
+systems*
+
+*Achieves internationally certified corporate governance and compliance
+management*
+
+*Hong Kong, 17 June 2014 --* http://www.ribose.com[Ribose] has achieved
+PAS 99:2012 certification, the internationally accepted framework for
+integrated management systems (IMS).
+
+Ribose is the first collaboration platform in the world and the first
+organization in Hong Kong to achieve this certification. Ribose's IMS
+integrates its existing business continuity and information security
+management systems, satisfying both ISO 22301:2012 and ISO 27001:2013,
+the international standards for business continuity and information
+security, respectively.
+
+Ribose's certification was awarded by http://www.bsigroup.com[BSI
+(British Standards Institution)], the originator of the PAS 99, ISO
+22301 and ISO 27001 standards. Certification is awarded only after an
+independent accredited auditor has thoroughly checked all applications,
+systems, processes and services.
+
+PAS 99 is a framework for integrating management systems built on
+different management systems standards (MSS). It specifies requirements
+for streamlining and managing MSSs, allowing for improved business
+focus, a more universal approach to risk mitigation and improved
+operational efficiency.
+
+"`Ribose is dedicated to providing our users with the highest standards
+of service. Achieving PAS 99 certifies that our management systems are
+tightly integrated -- including our highly dynamic information security
+management system, which has been awarded numerous security
+certifications such as ISO 27001, CSA STAR and CDSA CPS,`" explained
+Ronald Tse, founder of Ribose. "`We believe the holistic approach is key
+to effective collaboration, and we've taken that to heart in integrating
+our management systems -- which will augment service for all users.`"
+
+Emmanuel Herve, Managing Director of BSI Hong Kong, stated: "`By
+achieving PAS 99 certification for its IMS, Ribose has again
+demonstrated its commitment to industry-leading corporate governance.
+The certified efficiency of its management systems allows Ribose to
+focus its resources on enhancing its platform, and delivering effective
+solutions to users.`"

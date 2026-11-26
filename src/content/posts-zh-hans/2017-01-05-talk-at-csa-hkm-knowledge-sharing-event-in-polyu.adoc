@@ -1,0 +1,28 @@
+---
+layout: post
+title: "香港理工大学举行的 CSA HKM 知识分享活动中的演讲"
+date: 2017-01-05 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  香港理工大学举行的 CSA HKM 知识分享活动中的演讲
+---
+= 香港理工大学举行的 CSA HKM 知识分享活动中的演讲
+
+擎威 Ribose 的 Jeffrey Lau 将在今天于香港理工大学举行的 CSA HKM 知识分享活动中发表演讲。
+
+在此次演讲中，作为官方 CSA HKM 知识分享活动的一部分，Jeffrey 将讨论 SaaS 特定风险的管理。
+
+SaaS（软体即服务）几乎已成为现代企业和日常生活的必需品，如您所知，如今我们有无限的供应商选择。由于注册和开始使用这些服务非常容易，有时我们也很容易忽视或不了解相关风险。
+
+未加以控制，它们可能对组织的生存构成潜在威胁。幸运的是，组织可以采取措施来管理这些风险。
+
+Jeffrey 将在今天的活动中讨论这些与 SaaS 相关的风险，以及组织可以采取哪些最佳实践来保护自己及其客户。
+
+希望是次演讲对您有所收获和启发。如果您错过了此次活动，不用担心，这不会是我们员工参加的最后一次活动，敬请期待更多！
+
+如需了解更多活动资讯，
+https://csahkm.org/2016/12/20/csa-hkm-knowledge-sharing-event-january-2017/[请点击此处]！

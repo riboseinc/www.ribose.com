@@ -1,0 +1,16 @@
+---
+layout: post
+title: "协作提升生产力"
+date: 2013-08-14 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  协作提升生产力
+archived: true
+---
+= 协作提升生产力
+
+协作提升生产力。从协作中可以获得很多好处——它可以开启你的思维，接触到新的想法、不同的观点以及全新的视角。协作的过程创造了对话的空间，这些对话可以肯定你现有的愿景，挑战它，并最终强化它。在你生活中的任何场合，寻找与他人协作的机会，即使只是与朋友互相交流想法。

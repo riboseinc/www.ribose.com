@@ -1,0 +1,64 @@
+---
+layout: post
+title: "擎威 Ribose 成为中国大陆以外首家完成 CSA C-STAR 评估的云服务提供商"
+date: 2015-06-23 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 成为中国大陆以外首家完成 CSA C-STAR 评估的云服务提供商
+---
+= 擎威 Ribose 成为中国大陆以外首家完成 CSA C-STAR 评估的云服务提供商
+
+{blank}[24 June 2015 -- Hong Kong / Guangzhou] -- 擎威 Ribose 成为中国大陆以外首家完成 CSA C-STAR 评估的云服务提供商。
+https://cloudsecurityalliance.org[Cloud Security Alliance (CSA)] 的
+https://cloudsecurityalliance.org/star/c-star/[C-STAR 评估]
+是一个专注于大中华地区，新成立的云安全认证计划。
+
+是次成就使 Ribose 成为首批获得 C-STAR 评估认证的组织之一，也是首家获得 C-STAR 评估认证的软件即服务 (SaaS) 云服务提供商 (CSP)，同时也是全球唯一同时符合 CSA 三个全球认可的云保证计划（安全、信任和保证注册（STAR）系列）的 CSP：
+https://cloudsecurityalliance.org/star/attestation/[STAR 认证声明],
+https://cloudsecurityalliance.org/star/certification/[STAR 认证] 和
+https://cloudsecurityalliance.org/star/c-star/[C-STAR 评估]。
+
+C-STAR 评估是由 CSA 和
+http://www.ceprei.org[赛宝认证机构 CEPREI Certification Body] 共同开发的，作为一个专注于中国的云安全认证，C-STAR 评估将 CSA 的
+https://cloudsecurityalliance.org/research/ccm/[Cloud Controls Matrix
+(CCM)] 与中国国家标准相结合。作为对 CSP 安全管理的严格第三方评估，C-STAR 评估符合以下中国信息安全要求：
+standards:
+
+* http://webstore.spc.net.cn/produce/showonebook.asp?strid=36460[GB/T
+22080-2008] (http://www.iso.org/iso/iso27001[ISO/IEC 27001:2005])
+资讯技术 -- 安全技术 -- 资讯安全管理系统 -- 要求
+* http://webstore.spc.net.cn/produce/showonebook.asp?strid=36536[GB/T
+22239-2008] 资讯安全技术 — 分级保护资讯系统的基线安全要求
+* http://webstore.spc.net.cn/produce/showonebook.asp?strid=60767[GB/Z
+28828-2012] 资讯安全技术 -- 公共和商业服务资讯系统中的个人资讯保护指南
+* https://cloudsecurityalliance.org/research/ccm/[CSA's Cloud Control
+Matrix 3.0.1]
+
+C-STAR 评估 在 STAR 认证和 STAR 认证声明的控制要求基础上，增加了 29 项补充的安全和隐私控制要求。特别是，它要求组织根据国际公认的隐私原则以及中国和国际隐私法律法规尊重和保护用户的隐私，对个人可识别信息（PII）的生命周期和风险评估有明确要求。
+
+擎威 Ribose 受到 CSA 和 CEPREI 的邀请，参与 C-STAR 评估试点计划，这是基于其过去参与 CSA STAR 的经验，以及之前与 CEPREI 合作成为首家完成
+https://www.ribose.com/blog/2015/ribose-becomes-first-cloud-service-provider-to-complete-hong-kong-guangdong-cloud-security-assessment-and-certification-pilot-scheme[香港/广东云安全评估和认证试点计划] 的 CSP。基于参与试点计划的经验，Ribose 协助将 C-STAR 文档和控制要求翻译成英文，并对 C-STAR 计划提供反馈。
+
+Jim Reavis, 云安全联盟 CSA 联合创始人兼首席执行官：「
+擎威 Ribose 成为中国大陆以外首家完成 CSA C-STAR 评估的云服务提供商，这是对他们在云安全方面的承诺和努力的认可。作为云安全的先驱，Ribose 无疑展示了中国和国际云安全标准完全兼容。作为全球首家同时获得 CSA 三个全球认可的保证计划：STAR 认证声明、STAR 认证和 C-STAR 评估的 CSP，Ribose 通过独立验证展示了他们的实践是三重保证的，从而加强了他们保护用户的承诺。他们绝对是云安全实践行业的榜样。」
+
+Aloysius Cheang， 云安全联盟 CSA APAC 区域董事总经理兼标准秘书处负责人：「
+我们相信 C-STAR 代表了对云安全的强大保障。认证过程允许 CSP 同时符合国际和中国标准，并通过最佳实践的对齐和透明度的提高实现运营卓越。使用 CSA C-STAR 评估，CSP 将能够为客户提供更大的安心感，并更好地了解其安全管理程序。」
+
+赵国祥先生，中国国家认证机构 CEPREI 董事总经理，解释道：「C-STAR 允许中国的 CSP 展示其对云安全的承诺，同时也允许外国 CSP 展示其符合中国标准和法规的能力——这使他们在寻求在中国扩展业务的其他 CSP 中具有竞争优势。作为中国首个国际对齐的云安全评估，C-STAR 正被包括 Ribose、华为和蓝盾在内的领先企业采用——并且已经引起了云计算行业的国际关注，证明中国和国际云安全标准是兼容且互补的。」
+
+Ronald Tse，擎威 Ribose 创办人，解释道：「我们很荣幸成为第一家完成 CSA C-STAR 评估的 CSP，这是对我们在云安全方面承诺和努力的认可。C-STAR 评估是对我们安全管理实践的严格第三方评估，符合中国和国际的云安全标准。完成 C-STAR 评估为我们的国际用户提供了更严格的安全监督，使他们在与全球同事合作时更加安心。」
+
+「基于亚洲的 Ribose 是首家获得
+https://www.ribose.com/blog/2014/ribose-first-cloud-service-provider-to-achieve-multi-tier-cloud-security-certification[新加坡多层次云安全（MTCS，SS 584:2013）]
+认证的 CSP，在那里我们达到了
+https://www.ribose.com/blog/2014/ribose-world-s-first-cloud-service-provider-certified-to-multi-tier-cloud-security-standard-achieves-highest-level-3-security-tier[最高安全级别 3 级]。我们也是首家完成
+https://www.ribose.com/blog/2015/ribose-becomes-first-cloud-service-provider-to-complete-hong-kong-guangdong-cloud-security-assessment-and-certification-pilot-scheme[香港/广东云安全评估和认证试点计划的 CSP]，以及首家完成 C-STAR 评估的中国大陆以外的 CSP。」
+
+「擎威 Ribose 尊重各地区云安全评估计划的发展，因为每个国家都有不同的云安全要求。我们的平台已获得多个国家、地区和国际标准的认证，因为我们致力于服务我们的用户——无论他们身处何地。合作的需求是自然且普遍的。」
+
+「有鉴于此，Ribose 采用了并倡导 '最高标准' 的云安全方法。通过确保我们的云安全符合最严格的规定要求，我们能够为所有用户提供更高水平的安全保障，」Tse 总结道。「完成 C-STAR 评估为我们的国际用户提供了更严格的安全监督，使他们在与全球同事合作时更加安心。」

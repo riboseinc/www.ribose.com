@@ -1,0 +1,30 @@
+---
+layout: post
+title: "擎威 Ribose 平台新版本发布"
+date: 2013-03-19 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 平台新版本发布
+archived: true
+---
+= 擎威 Ribose 平台新版本发布
+
+擎威 Ribose 平台于2013年3月18日进行了更新，主要是修复错误的版本。
+
+状态讯息已移至右上角，为小工具提供更多空间。您现在可以通过点击您的名字，然后点击「更新状态」来编辑状态讯息。
+
+此版本还修复了与以下相关的错误：
+
+* XSS
+
+* 空间邀请
+
+* 富文本编辑器
+
+* 即时更新
+
+* 语言环境

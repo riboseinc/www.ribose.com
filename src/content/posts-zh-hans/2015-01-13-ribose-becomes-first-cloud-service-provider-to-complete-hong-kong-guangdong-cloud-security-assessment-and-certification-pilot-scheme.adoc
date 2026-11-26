@@ -1,0 +1,65 @@
+---
+layout: post
+title: "Ribose becomes first cloud service provider to complete Hong Kong/Guangdong cloud security assessment and certification pilot scheme"
+date: 2015-01-13 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose becomes first cloud service provider to complete Hong Kong/Guangdong cloud security assessment and certification pilot scheme
+---
+= Ribose becomes first cloud service provider to complete Hong Kong/Guangdong cloud security assessment and certification pilot scheme
+
+*Hong Kong/Guangzhou,* *14 January 2015* *--*
+http://www.ribose.com[Ribose] has completed the first Hong
+Kong/Guangdong cloud security assessment and certification pilot scheme.
+
+Supported by the
+http://www.ogcio.gov.hk/en/strategies/government/cloud_strategy/guangdong_expert_formation.htm[Hong
+Kong/Guangdong Expert Committee on Cloud Computing Services and
+Standards], the scheme is sponsored by the
+http://www.gdei.gov.cn/[Economic and Information Commission of Guangdong
+Province (GDEI)] and operated by Guangzhou-based
+http://www.ceprei.org[CEPREI Certification Body]. The
+http://www.ogcio.gov.hk/[Office of the Government Chief Information
+Officer (OGCIO)] coordinates Hong Kong cloud service providers' (CSPs')
+participation in the scheme.
+
+The scheme evaluates CSPs' compliance with CEPREI's newly developed
+cloud security management standard, based on international and
+China-specific information security and data protection standards,
+including:
+http://webstore.spc.net.cn/produce/showonebook.asp?strid=36460[GB/T
+22080-2008] (http://www.iso.org/iso/iso27001[ISO/IEC 27001:2005]),
+http://webstore.spc.net.cn/produce/showonebook.asp?strid=36536[GB/T
+22239-2008],
+http://webstore.spc.net.cn/produce/showonebook.asp?strid=60767[GB/Z
+28828-2012] and https://cloudsecurityalliance.org/research/ccm/[CSA's
+Cloud Control Matrix 3.0].
+
+Ribose represented Hong Kong as one of the participants in the pilot
+scheme, helping to improve standards and operational details, by drawing
+on its experience in cloud security compliance and best practices.
+
+"`We are pleased that Ribose, a pioneer in cloud security, participated
+in the pilot scheme. Given its small company size, Ribose's achievement
+demonstrates its excellence in innovation,`" remarked Victor Lam, the
+Acting Government Chief Information Officer of Hong Kong. "`Ribose has
+shown Hong Kong's strength as Asia's leading digital city and our
+natural advantage in connecting China to the world.`"
+
+Liu Xiaoyin, Technical Director of CEPREI, commented, "`As China's first
+cloud security certification body, we believe regional cloud security
+standards must harmonize with international specifications. The fact
+that Ribose, a non-mainland-China-based company, has successfully
+completed the assessment demonstrates that Chinese and international
+standards are compatible and complementary.`"
+
+"`Ribose was honored to participate in this cross-border cloud security
+assessment pilot,`" said Ronald Tse, founder of Ribose. "`As the first CSP
+to pass the assessment, Ribose demonstrated that our systems meet the
+highest international and Chinese information security standards. With
+our security focus, our customers in China can freely collaborate and
+innovate with confidence and peace of mind.`"

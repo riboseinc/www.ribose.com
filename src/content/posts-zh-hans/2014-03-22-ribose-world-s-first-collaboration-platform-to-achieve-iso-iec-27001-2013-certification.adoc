@@ -1,0 +1,78 @@
+---
+layout: post
+title: "Ribose world's first collaboration platform to achieve ISO/IEC 27001:2013 certification"
+date: 2014-03-22 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose world's first collaboration platform to achieve ISO/IEC 27001:2013 certification
+---
+= Ribose world's first collaboration platform to achieve ISO/IEC 27001:2013 certification
+
+http://www.ribose.com[*Ribose*] *world's first collaboration platform to
+achieve* http://www.iso.org[*ISO*]**/**http://www.iec.ch[*IEC*]
+*27001:2013 certification*
+
+*One of the first organizations worldwide to achieve compliance to
+latest information security standard*
+
+*Hong Kong, 25 March 2014 --* http://www.ribose.com[Ribose] has achieved
+certification for the latest information security standard
+http://www.iso.org[ISO]/http://www.iec.ch[IEC] 27001:2013, covering all
+aspects of the company, including its social collaboration platform.
+
+In addition to being the world's first collaboration platform to achieve
+this certification, Ribose is also one of the first organizations
+worldwide, and the first organization in Hong Kong to do so. Ribose's
+certification was awarded by http://www.bsigroup.com[BSI (British
+Standards Institution)], the originator of the ISO/IEC 27001 standard.
+This international standard has wide-ranging requirements for
+implementing, operating, maintaining and improving information security
+management. Certification is awarded only after an independent
+accredited auditor has thoroughly checked all applications, systems,
+processes and services. Ribose's scope of certification was as
+comprehensive as possible, covering all processes and services.
+
+ISO/IEC 27001:2013 is the revised information security standard that
+supersedes ISO/IEC 27001:2005. This update includes significant
+improvements to security, covers risks such as identity theft, mobile
+devices and other online vulnerabilities, and provides a more
+streamlined approach leading to better risk management. Ribose's
+previous ISO/IEC 27001:2005 certification was also awarded by BSI.
+
+"`Ribose is committed to staying at the forefront of information security
+and protecting data, explains Ronald Tse, founder of Ribose.  Our
+state-of-the-art security system has already achieved highest merits in
+both CSA STAR certification and CDSA CPS certification. This latest
+certification shows that our system is dynamic and scalable, allowing us
+to protect information fully for our users. Our mission is to allow
+people to collaborate freely, and this certification gives people
+confidence that their information is always safe and fully protected.`"
+
+Emmanuel Herve, Managing Director of BSI Hong Kong, said: "`Ribose has
+again demonstrated its commitment to information security by being one
+of the first organizations worldwide to achieve certification for the
+latest version of the information security standard. Organizations want
+to be reassured that any data stored externally is secure and service
+providers need to show they have appropriate security systems in place
+to manage information they handle. By attaining this certification,
+Ribose can do just that.`"
+
+== About BSI
+
+The British Standards Institution is the business standards company that
+helps businesses turn standards of best practice into habits of
+excellence. As the world's first National Standards Body and a founding
+member of the ISO, BSI is an organization whose standards inspire
+excellence across the globe: http://www.bsigroup.com
+
+---
+
+Originally published at:
+
+* http://www.prnewswire.com/news-releases/ribose-worlds-first-collaboration-platform-to-achieve-isoiec-270012013-certification-252224191.html[PRNewswire: Ribose: world's first collaboration platform to achieve ISO/IEC 27001:2013 certification]
+* http://hk.prnasia.com/story/94890-2.shtml[PRNewswire HK: Ribose：全球首个通过 ISO/IEC 27001:2013 认证的协作平台]
+

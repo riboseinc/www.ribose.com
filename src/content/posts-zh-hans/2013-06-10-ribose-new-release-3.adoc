@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Ribose new release"
+date: 2013-06-10 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose new release
+archived: true
+---
+= Ribose new release
+
+Hello!
+
+Our June release was just put up a week ago with feature updates as well
+as fixes.
+
+At www.ribose.com you'll see our shiny new public site which foretells
+some design changes to come in the application. Public facing parts of
+the application have been updated as well, including the login page.
+
+You can now see who you have invited to via People > Requests > Sent.
+For those who often use multiple tabs, no more missing new notifications
+and chat messages -- these events now show up in the title bar so you
+know something happening just by looking at the title.
+
+Numerous bug fixes in Guidance, Chat, Tags and some security hardening.
+
+We are still tweaking and adding stuff to www.ribose.com, feel free to
+send us an email feedback@ribose.com if you have any suggestions or
+criticism.
+
+Ribose team

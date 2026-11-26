@@ -1,0 +1,30 @@
+---
+layout: post
+title: "擎威 Ribose 平台获得 SS 584:2020 多层次云安全标准认证"
+date: 2022-12-01 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 平台获得 SS 584:2020 多层次云安全标准认证
+---
+= 擎威 Ribose 平台获得 SS 584:2020 多层次云安全标准认证
+
+{blank}[2022年12月1日 -- 英国伦敦]
+
+http://www.ribose.com[擎威 Ribose] 已获得并更新了其
+https://www.singaporestandardseshop.sg/Product/SSPdtDetail/b5430dc1-27f3-4203-bd8e-00345da6bed5[SS 584:2020]
+（新加坡标准的第三版），符合
+https://www.bsigroup.com/en-SG/cloud-security/multi-tiered-cloud-security-ss584/[Multi-Tiered Cloud Security (MTCS)] 认证计划的最高 Tier 3，由https://www.sac-accreditation.gov.sg[新加坡认证局 (SAC)] 认可的机构 BSI 颁发，Ribose 已从其 SS 584:2015 的认证过渡到 SS 584:2020。
+
+https://www.imda.gov.sg/regulations-and-licensing-listing/ict-standards-and-quality-of-service/IT-Standards-and-Frameworks/Cloud-Computing-and-Services[MTCS 认证计划] 是全球首个多层次的云安全认证，根据供应商面临的风险区分安全要求的层级。 MTCS 是由 SS 584 云安全标准定义的，该标准获得了
+https://www.imda.gov.sg/regulations-and-licensing-listing/ict-standards-and-quality-of-service/industry-committees-and-working-groups/IT-Standards-Committee[资讯技术标准委员会 (ITSC)] 的批准，并得到https://www.enterprisesg.gov.sg/[Enterprise Singapore] 和https://www.imda.gov.sg/[IMDA Singapore] 的支持。 SS 584:2020 的最新版本通过与 https://www.iso.org/standard/54534.html[ISO/IEC 27001:2013] 的更紧密对齐，并提供了对新兴技术（如零信任和持续监控）的额外控制，改进了 SS 584:2015。
+
+擎威 Ribose 平台在 2022 年 1 月完成了从 SS 584:2015 到 SS 584:2020 的过渡评估审核，该审核由新加坡认证局的见证评估师观察，并于 2022 年 11 月由 BSI 完全更新了其认证。当 MTCS 计划首次推出时，Ribose 是全球首个获得 SS 584:2013 认证的组织，也是第一个在 BSI 的支持下实现向 https://www.singaporestandardseshop.sg/Product/SSPdtDetail/5b014ff6-02ca-4918-afb0-379703794b4d[SS 584:2013] 过渡的组织。
+
+擎威 Ribose 创办人 Ronald Tse 表示： "MTCS 认证计划自成立以来一直是先驱，通过为云服务提供商设定高标准来确保云安全。通过将我们的 MTCS 认证升级到 SS 584:2020 的 Tier 3，我们的用户可以确信他们的信息在为关键任务数据设计的最严格要求下保持安全。"
+
+https://www.bsigroup.com/en-SG/[BSI 新加坡] 的 Managing Director Charlene Loo 表示：
+"MTCS 认证计划是全球首个涵盖多层次云安全的标准。随著数据泄露和恶意攻击的增加，组织需要采用最专业和最先进的网络安全策略。作为新加坡认证局认可的认证机构，BSI 很自豪能够支持 Ribose 通过其 SS 584:2020 过渡来确保云安全。"

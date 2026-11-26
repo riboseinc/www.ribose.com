@@ -1,0 +1,33 @@
+---
+layout: post
+title: "擎威 Ribose 成为首个完成英国 Cyber Essentials Plus 认证的协作平台"
+date: 2015-05-19 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 成为首个完成英国 Cyber Essentials Plus 认证的协作平台
+---
+= 擎威 Ribose 成为首个完成英国 Cyber Essentials Plus 认证的协作平台
+
+*20 May 2015 -- London / Hong Kong --* 擎威 Ribose 成为全球首个完成英国 Cyber Essentials Plus 认证的协作平台。
+Cyber Essentials 是一个由英国政府支持并由行业支持的计划，旨在帮助企业防范网络威胁。
+
+2014 年 6 月推出，Cyber Essentials 由 https://web.archive.org/web/20130118023207/https://www.cesg.gov.uk/[CESG] (http://www.gchq.gov.uk[GCHQ]
+的资讯安全部门) 及
+https://www.gov.uk/government/organisations/department-for-business-innovation-skills[英国 Department of Business, Innovation and Skills] 与
+http://www.bsigroup.com[英国标准协会 BSI (British Standards Institution)]，
+Information Assurance for Small and Medium Enterprises (IASME) consortium、
+https://www.securityforum.org/[Information Security Forum (ISF)]一起开发。
+
+自 2014 年 10 月起，Cyber Essentials 认证已成为英国中央政府 ICT（资讯和通信技术）供应商的强制性要求，适用于处理敏感和个人信息的供应商。
+
+Cyber Essentials 是一个两级计划，完成自我评估问卷并经过独立验证后授予认证。Cyber Essential Plus 认证是可选的，通过外部认证机构的独立安全控制测试提供更高水平的保证，重点是抵御外部网络威胁的韧性。
+
+Ronald Tse，擎威 Ribose 的创始人评论道：「Ribose 很自豪成为全球首个完成英国 Cyber Essentials 和 Cyber Essential Plus 认证的协作平台。在 2014 年 8 月获得 IASME 颁发的 Cyber Essentials 认证后，我们很高兴在经过 Cyberis 的独立评估后获得 CREST 认可的 Cyber Essential Plus 认证。」
+
+「Cyber Essentials Plus 提供了对我们的安全系统和控制措施的独立第三方验证，并展示了我们对信息安全的承诺——特别是在英国市场方面」Tse 解释道。
+
+Geoff Jones，Cyberis 的董事解释：「Cyberis 很高兴能够向 Ribose 颁发成功通过的证书，根据 https://web.archive.org/web/20140413022846/http://www.crest-approved.org/industry-government/cyber-essentials/[CREST Cyber Essentials Plus 计划]。这显示了 Ribose 对信息安全的明确承诺，并证明了基本的技术安全控制措施已到位，以帮助防御互联网威胁。」

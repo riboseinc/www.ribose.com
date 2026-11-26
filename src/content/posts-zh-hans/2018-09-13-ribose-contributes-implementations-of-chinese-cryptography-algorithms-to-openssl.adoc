@@ -1,0 +1,36 @@
+---
+layout: post
+title: "擎威 Ribose 为 OpenSSL 贡献中国密码算法"
+date: 2018-09-13 11:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 为 OpenSSL 贡献中国密码算法
+---
+= 擎威 Ribose 为 OpenSSL 贡献中国密码算法
+
+*令 OpenSSL 工具包于中国能合法使用*
+
+{blank}[2018 年 9 月 13 日 - 香港与美国纽瓦克]
+
+http://www.ribose.com[擎威 Ribose] 宣布，已成功将SM2、SM3和SM4中国密码算法的实现
+贡献给OpenSSL密码库，这些算法现在作为OpenSSL 1.1.1版本的一部分可供一般使用。
+
+// [quote]
+// Ribose contributes implementations of Chinese cryptographic algorithms
+// to OpenSSL, compliant usage of OpenSSL toolkit within China now possible
+
+SM2、SM3、SM4 是中国的「商用密码（commercial cryptography）」算法，根据1999年中国国务院发布的「商用密码管理条例」，由国家密码管理局规定在中国境内使用。这些算法广泛应用于中国境内的技术中，以实现合法使用密码学，包括公钥基础设施（PKI）、身份识别和银行卡、可信平台模组，以及OpenPGP和传输层安全协议。
+
+SM2 是一种椭圆曲线密码系统（ECC），提供公钥加密、数字签名、密钥协商算法，以及SM2专用椭圆曲线的参数。SM2于2010年首次发布，并被标准化为中国密码标准GM/T 0003和GB/T 32918（5部分）。
+
+SM3 是一种密码杂凑算法，由王小云教授设计，作为NIST SHA-256算法的对应版本，具有多项增强功能。SM3于2010年首次发布，并被标准化为中国密码标准GM/T 0004和GB/T 32905。
+
+SM4 是一种对称加密算法，专为数据加密而设计。作为AES（高级加密标准）的中国对应版本，它是一种128位分组密码，旨在实现速度和适用于低功耗设备的加密。由陆树旺教授设计，并被标准化为中国密码标准GM/T 0002和GB/T 32907。
+
+OpenSSL 的 Matt Caswell 表示：「OpenSSL项目开发并传播开放且免费的技术，以帮助全球人们保护他们的数据和通信。通过支持中国密码标准（SM2、SM3和SM4），我们希望促进OpenSSL在中国的更广泛使用，特别是在采用这些国家算法的行业中。我们衷心感谢Ribose对OpenSSL项目的贡献。」
+
+擎威 Ribose 的创办人 Ronald Tse 表示：「Ribose是开源和让人们保护自己数据的坚定支持者——这次贡献使得在中国运营的人们和组织能合法使用市场领先的密码库OpenSSL来保护他们的信息。我们感谢有机会与OpenSSL团队合作，并赞扬他们支持全球的密码学使用。」

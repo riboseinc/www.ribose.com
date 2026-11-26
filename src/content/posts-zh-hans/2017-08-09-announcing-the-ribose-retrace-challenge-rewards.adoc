@@ -1,0 +1,64 @@
+---
+layout: post
+title: "擎威 Ribose 宣布 Retrace 挑战赛与奖励计划"
+date: 2017-08-09 23:47:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 宣布 Retrace 挑战赛与奖励计划
+archived: true
+---
+= 擎威 Ribose 宣布 Retrace 挑战赛与奖励计划
+
+[[the-retrace-project]]
+== "retrace" 专案
+
+我们一直在开发一个名为 "link:https://riboseinc.github.io/retrace/[retrace]" 的开源专案。
+
+retrace（小写 "r"）是一个多功能的安全漏洞/错误发现工具，通过监控和修改已编译的二进位档在 Linux、OpenBSD/FreeBSD/NetBSD（共享物件）和 macOS（动态库）上的行为来运作。
+
+它可以用来协助反向工程/除错动态链接的 ELF 和 Mach-O 二进位可执行档。
+
+[[the-challenge]]
+== 挑战赛
+
+我们宣布三个独立的挑战赛，并提供奖励，以鼓励使用 retrace 并改进 retrace。每个挑战的奖金最高可达 1,000 美元，因此可能非常有趣。
+
+挑战赛期间为 2017-08-09 至 2017-10-10（含），获胜的挑战者将于 2017-10-16 在此处（以及 retrace GitHub 页面）公布。
+
+Retrace 挑战赛的完整细节请参阅：
+https://riboseinc.github.io/retrace/
+
+[[bug-challenge]]
+== 错误挑战
+
+错误挑战鼓励使用 retrace 发现知名软体（开源软体 / 专有软体）中的错误（任何错误和安全漏洞）。
+
+挑战奖励根据条目的 CVE CVSS 分数给予 -- 例如，使用 retrace 报告的确认的关键 CVE，有一个 1,000 美元的特别奖 -- 每个类别都有多个奖项。
+
+[[improvement-challenge]]
+== 改进挑战
+
+改进挑战是改进实际的 retrace 工具的代码。挑战者应该编写代码来改进 retrace（库或 CLI）以做一些有用的事情。例如，“最佳改进”大奖再次是 1,000 美元。其他类别请参阅 retrace 页面。
+
+[[usage-challenge]]
+== 使用挑战
+
+使用挑战是发现创意和有趣的方式来使用 retrace 以程式码的形式。挑战者应该编写代码来利用和整合 retrace（库或 CLI）来做一些有用且有趣的事情。结果将被纳入 retrace 仓库的 /examples 目录中，供公众使用，造福所有人。例如，“最有用”大奖是 500 美元。
+
+[[who-are-we]]
+== 我们是谁？
+
+我们是擎威 Ribose，一家安全共享公司。我们相信隐私和安全是自由的基础，我们的目标是赋予人们自由沟通和提高生产力的能力。
+
+我们创建 retrace 是为了帮助开发人员和安全研究人员开发更好的代码，从而引领世界走向更美好的未来。
+
+[[link]]
+== 连结
+
+这是挑战赛的连结。祝各位好运！
+
+https://github.com/riboseinc/retrace[https://riboseinc.github.io/retrace/]

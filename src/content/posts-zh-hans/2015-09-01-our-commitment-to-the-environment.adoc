@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Our commitment to the environment"
+date: 2015-09-01 16:00:00 
+categories: ribose
+featured: true
+author:
+  name: Jeffrey Lau
+  email: jeffrey.lau@ribose.com
+excerpt: >-
+  Our commitment to the environment
+archived: true
+---
+= Our commitment to the environment
+
+Hi everyone!
+
+In order to provide better organization transparency for our users and
+partners, we have decided to post our environmental policy publicaly.
+
+Ribose is committed to proactively and continuously protect and preserve
+the environment as a responsible corporate citizen. We have implemented
+an Environmental Management System compliant to ISO 14001:2015 to
+achieve these goals in a systematic manner.
+
+We are committed to:
+
+1.  Identify significant environmental impacts from our activities, and
+where we have influence or direct control, define objectives and
+targets, environmental management programs, and monitor their
+implementation
+2.  Conduct operations in line with applicable environmental
+regulations, and request business partners to follow the same
+3.  Minimize our energy and resource usage, waste produced, and
+undertaking our activities in a safe and responsible manner to the
+environment
+4.  Support the reduction, reuse and recycling of materials and ensure
+waste management is performed according to regulations and industry
+standards
+5.  Prevent use of environmentally harmful substances and their emission
+into the environment
+6.  Educate and raise awareness of staff to act proactively in
+environmental matters
+7.  Maintain efficient communications with interested parties to to
+promote environment pro- tection
+8.  Regularly review environmental aspects, objectives and environmental
+management programs to continually improve our environmental
+performance.  
+

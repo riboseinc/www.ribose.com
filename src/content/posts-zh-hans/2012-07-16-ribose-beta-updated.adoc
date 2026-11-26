@@ -1,0 +1,21 @@
+---
+layout: post
+title: "擎威 Ribose Beta 版本更新"
+date: 2012-07-16 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose Beta 版本更新
+archived: true
+---
+= 擎威 Ribose Beta 版本更新
+
+擎威 Ribose团队正积极将您的反馈整合至系统中
+（感谢您！）。本次更新应已解决多数用户回报的问题。
+请持续透过「提供意见回馈」选单分享您的想法。
+感谢支持！
+
+擎威 Ribose 团队

@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Ribose 获得 ISO/IEC 27001 认证"
+date: 2013-10-19 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose 获得 ISO/IEC 27001 认证
+
+---
+= Ribose 获得 ISO/IEC 27001 认证
+
+**Ribose 首个以消费者为中心的社交协作平台获得 ISO/IEC 27001 认证**
+
+香港2013年10月22日电 /美通社/ -- 总部位于香港的初创企业 Ribose 今天宣布，该机构已获得 ISO/IEC 27001认证。此认证涵盖 Ribose 的社交协作平台以至全公司所有业务。
+
+Ribose 的认证由原设立 ISO/IEC 27001标准的设立机构英国标准协会 (BSI) 发放。Ribose 是首个获得此项认证的非企业、以消费者为中心的协作平台。此成果表示用户信息安全保护是 Ribose 所有流程的一部分。
+
+总部位于香港的初创企业 Ribose 今天宣布，该机构已获得 ISO/IEC 27001认证。此认证涵盖 Ribose 的社交协作平台以至全公司所有业务。
+
+ISO/IEC 27001为一项信息安全管理的国际标准，广泛亦深入地规定了实施、营运、维护和改善信息安全管理系统的各项严格要求。认证过程必需经过一个中立的独立认证审核师进行全面评审并且判定该机构的应用、系统、流程及服务完全符合国际标准。
+
+Ribose 创办人 Ronald Tse 解释说：「Ribose 作为一家云端协作平台供应商必须努力不懈以较高标准保护用户信息。我们的认证范围非常全面，覆盖机构的所有流程包括设计、开发和营运以及技术支援。因此我们用户的隐私和数据将会一直得到尊重和保护，从而可以通过 Ribose 自由协作，实现创新和团队成功。」
+
+BSI Hong Kong 董事总经理兼 BSI Asia Pacific 标准与专业服务副总裁 Emmanuel Herve 表示：「Ribose 的 ISO/IEC 27001认证拥有广泛认证范围，为利益相关各方和用户提供强大的保证，确保所有信息会一直得到安全处理。我们非常荣幸能支持更多用户透过 Ribose 成功合作，以及提高整体社交协作市场信息安全水平。」
+
+
+== 关于擎威 Ribose
+
+擎威 Ribose 透过其社交协作平台帮助全球个人和组织有效合作。通过专注于「协作的整体」，Ribose 将在线社交协作提升到一个新的水平。无论是为家庭和朋友计划社交活动，还是运行复杂的商业项目，您都会发现 Ribose 使其变得简单、有效且真正有趣。Ribose 目前处于公开测试阶段，免费使用，已经为许多人重新定义了协作结果。Ribose 成立于2008年，总部位于香港，在美国加利福尼亚州洛杉矶设有办事处。
+http://www.ribose.com
+
+---
+
+原文刊载于：:
+
+* http://www.prnewswire.com/news-releases/ribose-achieves-isoiec-27001-certification-228623871.html[PRNewswire: Ribose achieves ISO/IEC 27001 certification]
+* http://en.prnasia.com/story/87737-0.shtml[PRNewswire Asia: Ribose achieves ISO/IEC 27001 certification]
+* http://hk.prnasia.com/story/87737-2.shtml[PRNewswire HK: Ribose 获得 ISO/IEC 27001 认证]

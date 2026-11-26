@@ -1,0 +1,31 @@
+---
+layout: post
+title: "擎威 Ribose 完成全球首个 ISO/IEC 27001:2022 过渡评估，符合 BSI Pacific Limited 标准"
+date: 2022-12-02 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 完成全球首个 ISO/IEC 27001:2022 过渡评估，符合 BSI Pacific Limited 标准
+---
+= 擎威 Ribose 完成全球首个 ISO/IEC 27001:2022 过渡评估，符合 BSI Pacific Limited 标准
+
+{blank}[2022年12月2日 -- 英国伦敦]
+
+http://www.ribose.com[擎威 Ribose] 已完成与 https://www.bsigroup.com/en-HK/[BSI Pacific Limited] 的首次验证过渡评估，迈向
+https://www.iso.org/contents/news/2022/10/new-iso-iec-27001.html[ISO/IEC 27001:2022]，
+这是资讯安全管理系统国际标准的第三版。
+
+https://www.iso.org/standard/82875.html[ISO/IEC 27001:2022] 是资讯安全管理系统标准的最新版本，与
+https://www.iso.org/standard/75652.html[ISO/IEC 27002:2022] 的 93 项全面资讯安全控制相一致，这些控制分为组织、员工、物理和技术方面，从而在隐私保护、资料泄漏防护和风险管理方面提升了绩效。
+
+Ribose 已完成 ISO/IEC 27001:2022 过渡评估，并于 2022 年 11 月 30 日由 BSI 发出符合性函。Ribose 之前的认证，包括 https://www.iso.org/standard/54534.html[ISO/IEC 27001:2013] 和https://www.iso.org/standard/42103.html[ISO/IEC 27001:2005]，也由 BSI 颁发，BSI 是领先的合规评估机构，也是 ISO/IEC 27001 标准的创始者。
+27001 standard.
+
+“擎威 Ribose 的用户是各行各业的创新领导者。随著组织面临日益增多的网路安全挑战，这些挑战可能威胁创新，ISO/IEC 27001 帮助保护我们的用户，提供全面的网路韧性框架。” 擎威 Ribose 创办人 Ronald Tse 表示。“通过及早将我们的流程升级到最新版本的 ISO/IEC 27001，我们的用户可以放心，他们的数据在我们持续承诺资讯安全的保障下得到良好保护。”
+
+Michael Lam, Managing Director, Assurance Division,
+https://www.bsigroup.com[BSI] APAC Region,
+表示，"当今世界越来越依赖数字信任，这需要对管理网路安全风险的高度关注。作为 ISO/IEC 27001 标准的原始开发者，BSI 很自豪能支持 Ribose 在其过渡到最新版本的 ISO/IEC 27001 中对世界级安全的承诺。"

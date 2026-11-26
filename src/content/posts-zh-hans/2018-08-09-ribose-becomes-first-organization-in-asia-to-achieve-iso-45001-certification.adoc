@@ -1,0 +1,35 @@
+---
+layout: post
+title: "擎威 Ribose 成为亚洲首家获得 ISO 45001 认证的组织"
+date: 2018-08-09 14:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 成为亚洲首家获得 ISO 45001 认证的组织
+---
+= 擎威 Ribose 成为亚洲首家获得 ISO 45001 认证的组织
+
+*获得最新国际健康与安全管理标准认证*
+
+{blank}[2018 年 8 月 9 日 -- 香港与伦敦]
+
+安全云供应商 http://www.ribose.com[Ribose] 成为亚洲首家获得 https://www.iso.org/standard/63787.html[ISO 45001:2018] 认证的组织，也是全球首批获得该认证的组织之一，认证机构为 https://www.bsigroup.com[BSI]。
+
+// [quote]
+// Ribose is first in Asia to achieve ISO 45001 certification, the international
+// standard for health and safety management, by BSI
+
+ISO 45001:2018 是最新发布的国际职业健康与安全管理系统标准，是19年前发布的 https://www.bsigroup.com/en-GB/ohsas-18001-occupational-health-and-safety/Certification-for-BS-OHSAS-18001/[OHSAS 18001] 的继任者。
+
+擎威 Ribose 的认证由 BSI (British Standards Institution) 颁发，BSI 是首批获得 https://anab.ansi.org[ANSI-ASQ National Accreditation Board (ANAB)] 全球认可的认证机构之一。BSI 最初于 2018 年 3 月 30 日发出「合规确认」信函，确认擎威 Ribose 符合 ISO 45001 标准。
+
+此前，Ribose 运行的是符合 OHSAS 18001 的管理系统，现在已升级以符合 ISO 45001。
+
+ISO 45001 采用了 ISO 的高级结构 (HLS) 管理系统框架，如附录 SL 所述。附录 SL 也被其他管理系统使用，包括 ISO 9001 和 ISO/IEC 27001，对管理系统流程进行对齐，从而简化了整合。ISO 45001 的范围也比 OHSAS 18001 更广，利益相关者包括所有直接或间接受组织健康与安全管理问题影响的内部或外部方。
+
+Enoch Lee, BSI 香港区总经理表示：「BSI 一直以来都是健康与安全管理的倡导者，并且建立了最初的 BS OHSAS 18001 标准。健康与安全考量适用于所有行业，包括办公室环境。作为亚洲首家获得 ISO 45001 认证的组织，Ribose 清楚地展示了其致力于维持最高国际标准的承诺。」
+
+Ronald Tse, Ribose 创办人表示：「在 Ribose，我们的员工是公司核心，他们的福祉是我们的首要任务。获得 ISO 45001 认证证明了我们的健康与安全实践符合国际最佳实践，并有助于确保我们的员工、合作伙伴和客户的福祉。」
