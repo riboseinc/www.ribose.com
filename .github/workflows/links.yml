@@ -28,7 +28,7 @@ jobs:
           key: wire-${{ github.run_id }}
           restore-keys: wire-
 
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
       - name: Restore lychee cache
