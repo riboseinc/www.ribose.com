@@ -1,0 +1,60 @@
+---
+layout: post
+title: "Ribose becomes world's first casual collaboration platform to achieve ISO/IEC 20000 certification"
+date: 2014-11-09 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose becomes world's first casual collaboration platform to achieve ISO/IEC 20000 certification
+---
+= Ribose becomes world's first casual collaboration platform to achieve ISO/IEC 20000 certification
+
+*-- Certified to international standard for information technology
+service management --*
+
+*Hong Kong, 10 November 2014 --* http://www.ribose.com[Ribose] has become
+the world's first casual collaboration platform to achieve certification
+to the http://www.iso.org/iso/catalogue_detail?csnumber=51986[ISO/IEC
+20000-1:2011] international standard for information technology service
+management (ITSM).
+
+Based on the  https://www.axelos.com/best-practice-solutions/itil[IT infrastructure library
+(ITIL®)] best practice framework, ISO/IEC 20000-1 specifies requirements
+for planning, establishing, implementing, operating, monitoring,
+reviewing, maintaining and improving services management systems. The
+standard ensures companies can achieve evidence-based benchmarks to
+continuously improve service delivery.
+
+Ribose's certification is awarded by http://www.bsigroup.com/[BSI], the
+originator of the ISO/IEC 20000-1 standard and its predecessor, BS
+15000, accredited by http://www.anab.org/[ANAB (ANSI-ASQ National
+Accreditation Board)], and recognized by the official
+http://www.isoiec20000certification.com/[ISO/IEC 20000 IT Service
+Management Certification Scheme] created by http://www.itsmfi.org/[itSMF
+(the IT Service Management Forum)] and operated by the
+http://www.apmgroupltd.com/[APM Group].
+
+Ribose founder Ronald Tse commented, "`To achieve Ribose's mission of
+helping people work together more efficiently and effectively, we are
+committed to maintaining and improving our service delivery
+processes. Achieving ISO/IEC 20000-1 certification is independent
+verification of our availability, service process quality and customer
+responsiveness. It clearly demonstrates that Ribose has implemented
+industry best practices, and continuously monitors and improves the
+quality of our service.`"
+
+"`Ribose's accreditations and certifications stand as undisputable proof
+that world-class security, availability and service management are no
+longer limited to enterprise cloud users,`" concluded Tse. "`The Ribose
+platform brings these benefits to everyone, completely free of charge.`"
+
+According to Emmanuel Herve, Managing Director of BSI Hong Kong,
+"`Evidence-based service management is the key to keeping customers
+happy. Previously, services certified to ISO/IEC 20000 standards were
+limited to high-paying corporate customers. However, Ribose has
+demonstrated that well-managed, secure cloud collaboration platforms are
+no longer the sole domain of enterprise users, providing its users with
+enterprise-grade service management and security.`"

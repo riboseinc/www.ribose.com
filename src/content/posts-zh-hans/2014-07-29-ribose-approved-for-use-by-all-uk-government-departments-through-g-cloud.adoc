@@ -1,0 +1,61 @@
+---
+layout: post
+title: "Ribose approved for use by all UK Government departments through G-Cloud"
+date: 2014-07-29 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose approved for use by all UK Government departments through G-Cloud
+---
+= Ribose approved for use by all UK Government departments through G-Cloud
+
+*Powerful internationally-certified collaboration platform available
+free of charge*
+
+*London, 30 July 2014* -- Cloud collaboration platform
+http://www.ribose.com[Ribose] has been approved for use by all UK
+Government agencies through the G-Cloud 5 framework. Ribose's services
+are now available to over 29,000 UK public sector bodies free of charge.
+
+Consisting of a series of framework agreements with suppliers, the
+G-Cloud initiative aims to ease procurement of cloud computing
+information technology services for UK Government departments by
+eliminating the need for full tenders or competitive procurement
+processes.
+
+"`Now available to all UK Government departments through the G-Cloud
+framework, Ribose helps agencies collaborate efficiently and effectively
+online,`" explained Ronald Tse, founder of Ribose. "`Users can set up
+online communities within minutes on Ribose, allowing government
+personnel to work together with external parties in a secure cloud
+environment -- accessible from anywhere in the world at any time,
+completely free of charge.`"
+
+As a leader in cloud security, Ribose is the world's first collaboration
+platform to achieve
+http://www.iso.org/iso/home/standards/management-standards/iso27001.htm[ISO/IEC
+27001:2013] certification, the first organization to achieve
+https://www.imda.gov.sg/regulations-licensing-and-consultations/ict-standards-and-quality-of-service/it-standards-and-frameworks/mtcs-certification-scheme[Multi-Tiered
+Cloud Security (MTCS)] certification from the
+https://www.imda.gov.sg/[Infocomm Development Authority of Singapore
+(IDA)] and the first and only organization to have achieved
+http://cloudsecurityalliance.org/[Cloud Security Alliance's (CSA)]
+https://cloudsecurityalliance.org/star/certification/[STAR
+Certification] at the highest possible Gold rating - satisfying the
+latest cloud security standard,
+https://cloudsecurityalliance.org/research/ccm/[CCM 3]. Ribose has also
+achieved the
+https://web.archive.org/web/20190818175613/https://www.mesalliance.org/communities/CDSA/production-security-guidelines/[CDSA
+CPS] certification for intellectual property security and has
+consistently been awarded the lowest risk rating possible.
+
+Ribose is also certified to the international standard for business
+continuity,
+http://www.bsigroup.com/en-GB/iso-22301-business-continuity/[ISO
+22301:2012], as well as the international standard for integrated
+management systems,
+http://www.bsigroup.com/en-GB/pas-99-integrated-management/Introduction-to-PAS-99/[PAS
+99:2012].

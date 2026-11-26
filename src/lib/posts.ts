@@ -6,7 +6,7 @@ export interface Post {
   slug: string            // e.g. 2013-10-07-ribose-joins-calendaring-organization-calconnect
   date: string            // ISO date from the filename
   title: string
-  lang: 'en' | 'zh-hant'
+  lang: 'en' | 'zh-hant' | 'zh-hans'
   archived?: boolean      // collaboration-platform era post (2012–2023)
   excerpt?: string
   categories: string[]
@@ -19,8 +19,11 @@ const enFiles = import.meta.glob('../content/posts/*.adoc', {
 const zhFiles = import.meta.glob('../content/posts-zh-hant/*.adoc', {
   query: '?raw', import: 'default', eager: true,
 }) as Record<string, string>
+const zhHansFiles = import.meta.glob('../content/posts-zh-hans/*.adoc', {
+  query: '?raw', import: 'default', eager: true,
+}) as Record<string, string>
 
-function parsePost(doc: { id: string; frontmatter: Record<string, any>; body: string }, lang: 'en' | 'zh-hant'): Post {
+function parsePost(doc: { id: string; frontmatter: Record<string, any>; body: string }, lang: 'en' | 'zh-hant' | 'zh-hans'): Post {
   const fm = doc.frontmatter
   const body = doc.body
   const base = doc.id
@@ -38,11 +41,11 @@ function parsePost(doc: { id: string; frontmatter: Record<string, any>; body: st
   }
 }
 
-const parseGroup = (files: Record<string, string>, lang: 'en' | 'zh-hant'): Post[] =>
+const parseGroup = (files: Record<string, string>, lang: 'en' | 'zh-hant' | 'zh-hans'): Post[] =>
   readDocs(files, (key) => key.split('/').pop()!.replace(/\.adoc$/, '')).map((doc) => parsePost(doc, lang))
 
 export const posts: readonly Post[] = Object.freeze(
-  [...parseGroup(enFiles, 'en'), ...parseGroup(zhFiles, 'zh-hant')]
+  [...parseGroup(enFiles, 'en'), ...parseGroup(zhFiles, 'zh-hant'), ...parseGroup(zhHansFiles, 'zh-hans')]
     .sort((a, b) => b.date.localeCompare(a.date)),
 )
 

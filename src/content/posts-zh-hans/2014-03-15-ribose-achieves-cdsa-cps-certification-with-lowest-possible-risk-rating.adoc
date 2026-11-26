@@ -1,0 +1,81 @@
+---
+layout: post
+title: "Ribose achieves CDSA CPS Certification with lowest possible risk rating"
+date: 2014-03-15 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose achieves CDSA CPS Certification with lowest possible risk rating
+---
+= Ribose achieves CDSA CPS Certification with lowest possible risk rating
+
+*Ribose achieves CDSA CPS Certification with lowest possible risk
+rating*
+
+*Committed to protecting user information and intellectual property*
+
+HONG KONG, March 17, 2014 /PRNewswire/ -- http://www.ribose.com[Ribose]
+has achieved certification for
+https://web.archive.org/web/20190818175613/https://www.mesalliance.org/communities/CDSA/production-security-guidelines/[Content
+Protection and Security (CPS)] from the
+https://web.archive.org/web/20160615232113/https://www.mesalliance.org/communities/CDSA/[Content Delivery and Security Association
+(CDSA)]. All audited areas were rated as Green, indicating full
+compliance and a low level of risk. Ribose is the only collaboration
+platform worldwide certified to CPS.
+
+Ribose believes the open Internet is based on innovation and the
+protection of intellectual property, which it is fully committed to.
+With CPS certification, intellectual property owners can be confident in
+collaborating freely on Ribose, knowing their content is safe and
+secure.
+
+CPS is an international standard developed by the world's largest
+content owners, including software, games, media and entertainment
+companies. It has stringent and comprehensive standards and procedures
+for the protection of intellectual property, including audited risk
+assessment, and for the management of all systems handling intellectual
+property. Certification is awarded only after exhaustive checks by CDSA
+auditors.
+
+CPS requirements comprise multiple capability framework areas including
+digital security, physical security and management. Ribose was found to
+be fully compliant in each area, representing a very low security risk
+environment.
+
+Peter Wallace, Worldwide Director of Anti-Piracy and Compliance
+Programs, CDSA, stated: "CPS certification is a comprehensive,
+industry-accepted standard covering content security. Ribose is
+operating to the highest standards and we commend its commitment to
+intellectual property security."
+
+"It is rare for a company to achieve full compliance in a first audit,
+and we are delighted that Ribose performed so well across all areas,"
+explained James Wise, Director of Anti-Piracy and Compliance Programs in
+Asia, CDSA. "The security management systems at Ribose are well-designed
+and quite mature, demonstrating that Ribose is very serious about
+protecting user information."
+
+'''
+
+== About CDSA
+
+The https://web.archive.org/web/20160615232113/https://www.mesalliance.org/communities/CDSA/[Content Delivery and Security Association (CDSA)]
+is a non-profit organization advocating the innovative and
+responsible delivery and storage of entertainment, software and
+information. Among its members are some of the world's largest
+intellectual property owners including Adobe, Microsoft, Electronic
+Arts, Sony, NBCUniversal and the Walt Disney Company. Established in the
+1970s, CDSA was previously known as the International Recording Media
+Association.
+
+Logo: http://photos.prnewswire.com/prnh/20140310/LA79617LOGO[http://photos.prnewswire.com/prnh/20140310/LA79617LOGO]
+
+---
+
+Originally published at:
+
+* http://www.prnewswire.com/news-releases/ribose-achieves-cdsa-cps-certification-with-lowest-possible-risk-rating-250595921.html[PRNewswire: Ribose achieves CDSA CPS Certification with lowest possible risk rating]
+* http://www.prnasia.com/story/archive/prna_852_1401380_2[PRNewswire HK: Ribose 以最低潜在风险评级通过 CDSA CPS 认证]

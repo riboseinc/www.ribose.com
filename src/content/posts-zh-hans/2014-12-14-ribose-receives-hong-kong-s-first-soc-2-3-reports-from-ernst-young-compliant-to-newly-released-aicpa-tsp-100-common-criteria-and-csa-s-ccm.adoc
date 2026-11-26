@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Ribose receives Hong Kong's first SOC 2 / 3 reports from Ernst & Young -- Compliant to newly released AICPA TSP 100 common criteria and CSA's CCM"
+date: 2014-12-14 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose receives Hong Kong's first SOC 2 / 3 reports from Ernst & Young -- Compliant to newly released AICPA TSP 100 common criteria and CSA's CCM
+---
+= Ribose receives Hong Kong's first SOC 2 / 3 reports from Ernst & Young -- Compliant to newly released AICPA TSP 100 common criteria and CSA's CCM
+
+*Hong Kong, 15 December 2014 --* http://www.ribose.com[Ribose] received
+its first
+https://web.archive.org/web/20110722144955/http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/SORHome.aspx[Service
+Organization Controls (SOC) 2 and SOC 3 reports] -- as well as the
+http://www.webtrust.org/[SysTrust] seal -- from international auditing
+firm http://www.ey.com[Ernst & Young (EY)].
+
+SOC 2 and 3 are widely recognized attestations, providing independent
+validation that companies' internal controls comply with applicable
+http://www.aicpa.org/[American Institute of Certified Public
+Accountants' (AICPA)]
+https://web.archive.org/web/20101113235034/http://www.aicpa.org/InterestAreas/InformationTechnology/Resources/TrustServices/Pages/Trust%20Services%20Principles%E2%80%94An%20Overview.aspx[Trust
+Services Principles and Criteria (TSP 100)].
+
+https://web.archive.org/web/20110726090845/http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/AICPASOC2Report.aspx[SOC
+2] Type II is an internal control report regarding risks associated with
+organizations' services, including detailed testing of controls.
+https://web.archive.org/web/20110726090155/http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/AICPASOC3Report.aspx[SOC
+3] is intended for public consumption and includes fewer details than
+SOC 2.
+
+TSP 100, newly released in 2014, supersedes TSP section 100A from 2009
+and features a consolidated set of "`common criteria`" replacing
+previously separated principles: security, availability, processing
+integrity, and confidentiality. This standard applies to attestations
+after 15 December 2014.
+
+Ribose and EY adopted the revised standard as early as permitted by the
+AICPA. Ribose's SOC 2 Type II and SOC 3 reports are based on TSP 100
+security and availability principles, together with controls from
+https://www.cloudsecurityalliance.org[CSA]'s newly launched
+https://www.cloudsecurityalliance.org/working-groups/cloud-controls-matrix/[Cloud Controls Matrix
+(CCM) 3.0.1].
+
+In completing the attestation, Ribose received the first SOC 2 Type II
+report in Hong Kong; and became the first organization to receive SOC 2
+/ SOC 3 reports complying to both AICPA TSP 100 and CSA's CCM. Ribose's
+SOC reports are among the earliest reports utilizing AICPA's new common
+criteria.
+
+"`This engagement represents a significant milestone for EY and Ribose.
+We successfully integrated into our existing attestation methodology
+these new standards and streamlined processes to achieve multiple
+certifications,`" said Vincent Chan, Advisory Services Leader for EY Hong
+Kong and Macau. "`Ribose chose EY as their attestation partner as we are
+familiar with their operating environment, and our EY professionals have
+extensive experience and knowledge of cloud operations and security.`"
+
+Ribose founder Ronald Tse explained, "`Ribose is dedicated to helping
+people collaborate better; and the quality, security and reliability of
+our platform are paramount to achieving this goal. Our SOC 2 / 3
+examinations demonstrate that we have appropriate controls in place to
+mitigate security and availability risks -- meaning organizations faced
+with compliance requirements around sensitive data can fully leverage
+the Ribose platform.`"
+

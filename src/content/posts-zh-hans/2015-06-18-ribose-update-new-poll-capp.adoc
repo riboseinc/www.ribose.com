@@ -1,0 +1,60 @@
+---
+layout: post
+title: "Ribose update: new Poll capp!"
+date: 2015-05-19 16:00:00 
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose update: new Poll capp!
+archived: true
+---
+= Ribose update: new Poll capp!
+
+Hello everyone,
+
+In case you did not notice, last week we introduced a new collaborative
+application called Poll to every space -- indeed, a new application in
+quite some time!
+
+The Poll capp is a much requested feature from our existing users, who
+wanted to gauge sentiment or find group consensus in a space. With Poll,
+you can easily host polls to achieve this:
+
+1.  Enter the Space then the Poll capp
+2.  Click on "New Poll"
+3.  Fill in the poll title, description, the deadline and possible
+choices
+4.  Publish by clicking "Publish"!
+
+Other space members will be notified about the new poll in real-time
+(and by notification emails), and can participate in the poll right
+away.
+
+Some features of note:
+
+* Any member can create a Poll.
+* Poll creator and space admins are able to see the ongoing voting
+results and statistics. Regular voters will only see poll results after
+the poll has closed (after the deadline has passed).
+* Poll deadline must be at least 5 minutes after poll open.
+* Each poll automatically provides an "abstain" choice for voters. This
+is to allow voters to indicate an explicit "abstain" decision while
+participating. Abstain votes are counted in the participation rate in
+poll results to differentiate from non-participation (voters who did not
+vote).
+* After a poll is created, it cannot be modified. This is to maintain
+the credibility of voting results by preventing poll owners from
+manipulating votes. For example, a malicious poll owner may create a
+false consensus by switching vote choices that have already been voted
+on, or by changing the description of the poll. On the other hand, a
+poll can be deleted by the owner to indicate cancellation of the poll.
+
+The last feature might be a bit confusing, but we believe one of the
+most important attributes for both the poll owner and voters is that the
+poll is transparent and fair, representing a genuine outcome. 
+
+Please feel free to let us know how this feature works for you -- what
+works for you, works with us. Happy polling!

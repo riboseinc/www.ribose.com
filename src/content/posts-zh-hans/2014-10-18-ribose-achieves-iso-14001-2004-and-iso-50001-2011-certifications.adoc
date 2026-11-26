@@ -1,0 +1,66 @@
+---
+layout: post
+title: "Ribose achieves ISO 14001:2004 and ISO 50001:2011 certifications"
+date: 2014-10-18 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose achieves ISO 14001:2004 and ISO 50001:2011 certifications
+---
+= Ribose achieves ISO 14001:2004 and ISO 50001:2011 certifications
+
+*World's first collaboration platform to achieve environmental and
+energy management systems standards*
+
+*Hong Kong, 15 October 2014 --* http://www.ribose.com[Ribose] has become
+the world's first collaboration platform to achieve certification to the
+http://www.iso.org/iso/iso14000[ISO 14001:2004] and
+http://www.iso.org/iso/iso50001[ISO 50001:2011] international standards.
+ISO 14001:2004 helps organizations minimize their environmental
+footprint by setting out criteria for environmental management systems,
+while ISO 50001:2011 improves the energy performance of organizations by
+specifying requirements for energy management systems.
+
+Ribose's ISO 14001 certification verifies its ability to measure its
+environmental impact and strive towards continuous improvement, while
+the ISO 50001 certification confirms its implementation of procedures
+and protocols to continually improve energy efficiency and consumption.
+
+Ribose's certifications -- both awarded by http://www.bsigroup.com[BSI
+(British Standards Institution)], the originator of the ISO 14001
+standard -- were approved after validation of all applications, systems,
+processes and services within the company by an independent accredited
+auditor.
+
+Ribose founder Ronald Tse explained, "`Ribose's commitment goes beyond
+helping people work together effectively and efficiently - it extends to
+protecting the environment of the communities we serve. These new
+certifications are key components of Ribose's ongoing corporate
+governance improvement program, which aligns our business operations to
+international best practices.`"
+
+"`Ribose's integrated management system framework -- which is already
+certified to ISO 9001, ISO 22301, ISO/IEC 27001 and PAS 99 -- now extends
+to cover environmental and energy considerations,`" Tse continued. "`By
+implementing environmental and energy best practices, we are reducing
+our environmental footprint and enabling our customers to achieve and
+integrate sustainability objectives into their respective supply
+chains.`"
+
+"`Environmental and energy impacts are often overlooked by cloud service
+providers, as these costs are often hidden behind infrastructure
+providers,`" Tse concluded. "`Ribose is proud to take the lead in
+encouraging other cloud service providers to proactively manage our
+industry's environmental footprint. Together, we can make a huge
+impact.`"
+
+Emmanuel Herve, Managing Director of BSI Hong Kong, added, "`No
+organization operates in a vacuum, and the performance of any
+organization is closely linked to the health of the environment in which
+it operates. By certifying to the ISO 14001 and ISO 50001 standards,
+Ribose's awareness and management of environmental and energy risks
+demonstrate a clear understanding of its own corporate responsibilities,
+and a wider concern for the community and our shared environment.`"

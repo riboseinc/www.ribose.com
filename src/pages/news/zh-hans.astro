@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/Base.astro'
+import { posts } from '../../lib/posts'
+const zh = posts.filter((p) => p.lang === 'zh-hans').sort((a, b) => b.date.localeCompare(a.date))
+---
+<BaseLayout title="News (简体中文)" description="Ribose 新闻 — 简体中文版本。" path="/news/zh-hans" lang="zh-hans">
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6" lang="zh-hans">
+    <p class="eyebrow">Newsroom</p>
+    <h1 class="h-display mt-2 text-4xl font-bold sm:text-5xl">新闻（简体中文）</h1>
+    <p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-400">Ribose 公告的简体中文版本。English editions: <a href="/news" class="font-semibold text-brand-700 hover:underline dark:text-brand-400">/news</a> · 繁體中文: <a href="/news/zh-hant/" class="font-semibold text-brand-700 hover:underline dark:text-brand-400">/news/zh-hant/</a></p>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {zh.map((p) => (
+        <a href={`/news/zh-hans/${p.slug}`} class:list={['card group flex flex-col p-5', p.archived && 'hidden']} data-archived={p.archived ? 'true' : undefined}>
+          <time class="text-xs text-slate-500 dark:text-slate-500">{p.date}</time>
+          <h3 class="mt-2.5 font-semibold leading-snug group-hover:text-brand-700 dark:group-hover:text-brand-300" lang="zh-hans">{p.title}</h3>
+          {p.archived && <span class="mt-2 w-fit rounded-full border border-line px-2 py-0.5 text-xs text-slate-400 dark:border-slate-700 dark:text-slate-500">archive</span>}
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

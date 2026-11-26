@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Ribose joins Open Invention Network"
+date: 2015-03-15 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose joins Open Invention Network
+---
+= Ribose joins Open Invention Network
+
+*Forerunner in secure cloud collaboration signs on to protect Linux*
+
+*16 March 2015 -- Hong Kong --* Cloud collaboration platform provider
+Ribose has joined the Open Invention Network (OIN), an organization
+created to foster patent non-aggression for Linux producers and users.
+With over 1,300 members, OIN is the world's largest IPR community,
+undertaking a range of activities to reduce members' software patent
+risk.
+
+As an OIN licensee, Ribose joins other community members in royalty-free
+cross-licensing of Linux System patents to one another. Members agree to
+a patent non-aggression pact, foregoing patent disputes between member
+organizations in Linux and adjacent technologies.
+
+"`Ribose's powerful, intuitive, and highly secure platform makes
+collaboration easier and faster for distributed teams. In joining OIN,
+Ribose is demonstrating its commitment to the Linux environment -- and to
+working with the global Linux development community,`" said Shane
+Coughlan, Global Director of Licensing.
+
+"`Ribose was established to help make collaboration easy and fun,`"
+explained Ribose's founder Ronald Tse. "`This spirit underlies our core
+philosophy -- and is a commonly held value amongst OIN members. As Linux
+and open source technologies are key to achieving our goals, joining OIN
+gives Ribose access to core Linux technology patents that support our
+platform's ongoing development.`"
+
+Mr Tse concluded, "`We strongly support OIN's efforts, and look forward
+to collaborating with the wider Linux user community to create a
+positive, nurturing environment for long-term development.`"

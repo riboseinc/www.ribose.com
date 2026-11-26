@@ -1,0 +1,19 @@
+---
+layout: post
+title: "擎威 Ribose 参加新加坡 CloudAsia 2016"
+date: 2016-05-03 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 参加新加坡 CloudAsia 2016
+---
+= 擎威 Ribose 参加新加坡 CloudAsia 2016
+
+擎威 Ribose 正在新加坡参加 CloudAsia 2016！
+
+感谢新加坡资讯通信发展局 (IDA) 的邀请，我们在 Suntec 会展中心（4/F）的 IDA Pavilion 设有展位，正好在大门口。
+
+我们将于 5 月 3 日至 5 日期间在现场，欢迎随时来打招呼！

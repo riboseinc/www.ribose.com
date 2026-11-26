@@ -1,0 +1,28 @@
+---
+layout: post
+title: "擎威 Ribose 平台现已进入有限度公开测试阶段"
+date: 2012-09-13 00:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  擎威 Ribose 平台现已进入有限度公开测试阶段
+archived: true
+---
+= 擎威 Ribose 平台现已进入有限度公开测试阶段
+
+首先，衷心感谢您作为我们私有测试社群的重要成员。我们深切感激您在私有测试期间投入宝贵时间与心力，提供诸多建设性意见。这些建议我们已部分采纳，其余亦将优先纳入近期考量。
+
+今日欣然告知，Ribose 私人测试计划将转型为限量公开测试。
+
+先前系统透过 『beta.ribose.com』 存取，即日起请改以 『my.ribose.com』 进入。此变更不会影响您的帐户。
+
+为感谢私有测试版用户的支持，若您需要更多Ribose邀请函以促进协作，请透过「提供意见回馈」表单告知我们，我们将优先为您提供邀请函，再处理公开等候名单。
+
+再次感谢您的支持，我们期待未来数年持续满足您的协作需求。
+
+此致
+
+Ronald 代表 Ribose 团队

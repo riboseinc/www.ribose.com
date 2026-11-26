@@ -1,0 +1,21 @@
+---
+layout: post
+title: "擎威 Ribose 获得亚洲首家 ISO 14001:2015 和 ISO 9001:2015 认证"
+date: 2015-09-24 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Jeffrey Lau
+  email: jeffrey.lau@ribose.com
+excerpt: >-
+  擎威 Ribose 获得亚洲首家 ISO 14001:2015 和 ISO 9001:2015 认证！
+---
+= 擎威 Ribose 获得亚洲首家 ISO 14001:2015 和 ISO 9001:2015 认证！
+
+我们是首家（英国以外）获得新 ISO 14001:2015 和 ISO 9001:2015 认证的组织！这显示了我们对卓越治理的承诺。
+
+1. 这两项认证均由 BSI 颁发，并由 ANAB 认可，ANAB 是目前唯一批准 CB 的认可机构。
+
+2. 我们的 14001 认证是 BSI 的第二个认可认证，也是全球范围内的第二个认可认证！（目前唯一的认可 CB）。
+
+3. 我们的 9001 认证是 BSI 的前四个认可认证之一（其中三个来自英国）。

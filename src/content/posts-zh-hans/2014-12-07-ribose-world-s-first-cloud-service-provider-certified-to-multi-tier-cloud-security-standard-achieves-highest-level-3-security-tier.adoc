@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Ribose: World's first cloud service provider certified to Multi-Tier Cloud Security standard achieves highest Level 3 security tier"
+date: 2014-12-07 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose: World's first cloud service provider certified to Multi-Tier Cloud Security standard achieves highest Level 3 security tier
+---
+= Ribose: World's first cloud service provider certified to Multi-Tier Cloud Security standard achieves highest Level 3 security tier
+
+*Singapore/Hong Kong, 8 December 2014 --* http://www.ribose.com[Ribose],
+the world's first cloud service provider (CSP) certified to Singapore's
+https://www.imda.gov.sg/about/newsroom/archived/ida/media-releases/2013/new-multi-tier-cloud-security-mtcs-standard-launched-in-singapore[Multi-Tier
+Cloud Security (MTCS)] program, has recently achieved the highest
+possible security tier: Level 3.
+
+Initiated by the https://www.imda.gov.sg[Infocomm Development Authority of
+Singapore (IDA)] and launched by https://web.archive.org/web/20130114223503/http://www.spring.gov.sg/[SPRING
+Singapore], the MTCS standard (SS 584:2013) specifies stringent security
+and operational requirements for CSPs, encouraging adoption of sound
+risk management and security practices. MTCS Certification specifies
+three tiers of security levels, with Level 3 being the highest. The
+http://www.sac-accreditation.gov.sg[Singapore Accreditation Council
+(SAC)] has recently launched an accreditation program for MTCS
+Certification.
+
+Ribose was the first CSP worldwide to achieve MTCS certification in June
+2014 with a security tier of Level 1. Following a thorough evaluation by
+http://www.bsigroup.com[BSI (British Standards Institution)], a
+participating Certification Body for the MTCS standard, Ribose has
+upgraded its certification to the highest security tier, Level 3 --
+indicating its platform is suitable for running high-impact workloads,
+serving business- and mission-critical purposes, and hosting sensitive
+information as well as highly confidential business data.
+
+"`Ribose is proud to be the first Software-as-a-Service (Saas) provider
+certified to the MTCS standard, and the first SaaS platform to achieve
+the coveted Level 3 security tier,`" explained Ronald Tse, founder of
+Ribose.  "`This is a major milestone for Ribose, confirming our
+platform's government-approved security standards for handling users'
+highly sensitive and confidential data.`"
+
+Owen Xu, General Manager of BSI Singapore, commented, "`BSI takes pride
+in employing the most stringent auditing standards in the industry. With
+over 60,000 clients around the globe, our experts have audited many of
+the world's largest companies and government organizations that require
+top-notch security. By achieving MTCS at Level 3, Ribose has
+demonstrated its platform's security is indeed world-class.`"

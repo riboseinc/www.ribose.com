@@ -1,0 +1,39 @@
+---
+layout: post
+title: "New privacy policy, cookie usage disclosure, and more!"
+date: 2014-11-19 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  New privacy policy, cookie usage disclosure, and more!
+---
+= New privacy policy, cookie usage disclosure, and more!
+
+We care about your privacy -- and to demonstrate our commitment, we
+worked hard the past couple months ensuring full compliance with privacy
+regulations in all jurisdictions where we (and most of our users)
+operate in.
+
+Our https://www.ribose.com/privacy[new privacy policy], published today,
+has been updated to be compliant to the following privacy regulations:
+
+* Hong Kong PDPO 1995
+* EU Directive 95/46
+* US - COPPA 1998 and California OPPA 2003
+* Australia Privacy Act 19882
+* New Zealand Privacy Act 1993
+* Singapore PDP Act 2012
+* Canada PIPEDA 20003
+* APEC Privacy Principles 2005
+
+For increased transparency, we also disclose in which country your data
+is stored. We now have a "http://www.ribose.com/cookies[detailed cookie
+disclosure page]" where you can see which cookies we use and why they
+are used.
+
+Please do have a look at our https://www.ribose.com/privacy[new privacy
+policy] and if you have any questions, feel free to contact us using the
+/feedback[feedback form]!

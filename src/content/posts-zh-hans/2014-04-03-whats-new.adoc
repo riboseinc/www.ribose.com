@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Hey Ribose, what's new?"
+date: 2014-04-03 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Hey Ribose, what's new?
+archived: true
+---
+= Hey Ribose, what's new?
+
+*Hello!*
+
+Ribose has been updated. We would like to share with you a few of those
+changes.
+
+First up, we have moved *Chat* into a sidebar. The *sidebar* responds to
+the width of your browser (it seamlessly hides and shows accordingly,
+you can still toggle it on and off manually when it is hidden).
+
+Previously we removed all the 'widgets' from the site as they were badly
+presented. We have revived
+ redesigned a couple of them and you can
+find them in the sidebar — *weather and RSS*.  We hope they will help
+inform your day! 
+
+We received a *feature request* from one of our users a while back. As
+promised, a '*Print*' option has been added to *Discussions* so that
+when you print, it'll come out *nicely formatted*. Try it out!
+
+We are mid-way through improving invitations but it has been delayed. We
+have re-thought much of the invitations flow and we hope it is easier to
+use. More on this next time...
+
+*Maybe there's even a Ribose tee in it for you ;-)*

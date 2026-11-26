@@ -1,0 +1,26 @@
+---
+layout: post
+title: "协作解决世界问题"
+date: 2013-11-07 08:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  协作解决世界问题
+archived: true
+---
+= 协作解决世界问题
+
+当许多人面临更艰困的处境，承受贫困与无家可归的困境时，此刻社区齐心协力援助弱势群体至关重要。《赫芬顿邮报》今日刊文探讨美国境内无家可归儿童的现况。我们亟需与个人及社区携手合作解决此问题，而这绝非遥不可及。您的社区可携手协助一名孩童，
+同时与您合作的在地支援组织并肩作战。
+协作的本质在于团队合作。
+若我们能齐心协力帮助弱势群体，
+便正朝著正确方向前进。
+
+深入了解美国无家可归学童的困境。
+透过团队协作探索援助方案，
+您能创造改变的契机。
+
+http://www.huffingtonpost.com/2013/11/07/childhood-homelessness_n_4233503.html?ref=topbar

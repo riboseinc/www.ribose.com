@@ -1,0 +1,58 @@
+---
+layout: post
+title: "Ribose joins CSA to promote international standards for cloud security"
+date: 2014-06-22 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose joins CSA to promote international standards for cloud security
+---
+= Ribose joins CSA to promote international standards for cloud security
+
+*Hong Kong, 23 June 2014 --* http://www.ribose.com[Ribose], a start-up
+redefining the way people collaborate, has joined the Cloud Security
+Alliance (CSA) to help promote security in cloud computing. CSA
+developed the first industry-accepted standard for cloud security, the
+Cloud Controls Matrix (CCM), and its other members include tech
+luminaries such as Amazon, HP and Microsoft.
+
+Ribose is the first organization in the world to adopt the CCM 3.0
+security standard, achieving STAR Gold Certification, and is committed
+to developing and promoting industry best practice in cloud and security
+standards.
+
+Ribose Founder Ronald Tse, who sits on ISO/IEC JTC 1/SC27, the committee
+responsible for the international information security standard ISO/IEC
+27001, and is also a member of the CSA International Standardization
+Council, explains, "`Ribose respects the privacy of our user data, and we
+are committed to promoting safe cloud computing over an open Internet.
+Working together with the CSA, we can drive cloud service providers to
+strengthen their cloud security and promote greater responsibility and
+accountability in the cloud service industry.`"
+
+Aloysius Cheang, Standards Secretariat and Managing Director APAC of
+CSA, said, "`The CSA leads a lot of cloud research and continuously
+extends the possibilities of cloud computing through enhanced security.
+We are very glad that Ribose, a pioneer in cloud computing security in
+Asia, is joining the CSA. We also welcome Ronald, who brings his
+extensive technical experience to CSA's International Standardization
+Council, which has been pivotal in the activities leading to the
+development of cloud security related international standards since
+2011.`"
+
+Jim Reavis, Co-founder of the CSA, added, "`As a pioneer in cloud
+security controls, Ribose is the very first provider worldwide to
+achieve STAR Certification with the latest CSA cloud standard, CCM3. We
+are delighted to welcome Ribose to the CSA, and we are certain that
+Ribose will contribute positively in protecting users' data in the
+cloud.`"
+
+In conclusion, Tse remarked, "`With Ribose's commitment to the highest
+levels of information security, our users can collaborate with
+confidence. By actively participating in the world's leading security
+and standards bodies like the CSA, Ribose is helping to guide the
+industry towards increasingly secure and accountable cloud computing.`"
+

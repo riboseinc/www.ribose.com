@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Ribose joins CDSA to promote intellectual property security"
+date: 2014-06-08 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose joins CDSA to promote intellectual property security
+---
+= Ribose joins CDSA to promote intellectual property security
+
+*Ribose joins CDSA to promote intellectual property security*
+
+*Facilitating collaboration throughout the intellectual property
+lifecycle*
+
+*Hong Kong, 9 June 2014 --* http://www.ribose.com[Ribose], a start-up
+redefining the way people collaborate, has joined the
+https://web.archive.org/web/20160615232113/https://www.mesalliance.org/communities/CDSA/[Content Delivery and Security Association
+(CDSA)] to promote the development of intellectual property security.
+Committed to an open Internet, Ribose believes respect for intellectual
+property is necessary for people to work together efficiently,
+effectively and enjoyably.
+
+A global forum for electronic intellectual property security, CDSA
+develops international standards for content protection and security,
+and performs audits to verify compliance. Its members include the
+world's largest intellectual property owners, including Adobe, Sony,
+Microsoft and the Walt Disney Company.
+
+Ronald Tse, Founder of Ribose, explains, "`Ribose is proud to be joining
+CDSA in working to protect intellectual property. Together, we are
+joining forces to provide guidance and leadership for the technology
+industry and cloud service providers -- setting parameters to strengthen
+security and promote responsible content storage and delivery.
+
+"`CDSA is delighted to welcome our newest member, pioneering cloud
+service provider Ribose. By joining CDSA, Ribose has made a strong
+statement that the Internet's benefits need not compromise information
+security or intellectual property rights,`" stated James Wise, Director
+of Anti-Piracy and Compliance Programs of CDSA in Asia. "`We are
+confident Ribose will play an active role in helping innovators
+worldwide improve the protection of intellectual property.`"
+
+As the first Software-as-a-Service cloud service provider to earn
+certification for CDSA's Content Security and Protection accreditation
+program, Ribose upholds strict standards of privacy and security.
+
+"`With our commitment to information security and intellectual property
+protection, Ribose provides a platform users can employ with
+confidence,`" concluded Tse. "`We treat our users as collaborators and
+associates. Our relationships are based on their trust in Ribose's
+systems and our respect for their data.`"

@@ -49,24 +49,29 @@ const current = Astro.url.pathname
 </header>
 
 <script is:inline>
-  document.addEventListener('click', function (e) {
-    var themeBtn = e.target.closest('#theme-toggle')
-    if (themeBtn) {
-      var apply = function () {
-        var dark = document.documentElement.classList.toggle('dark')
-        localStorage.setItem('theme', dark ? 'dark' : 'light')
-        themeBtn.setAttribute('aria-pressed', String(dark))
+  // ClientRouter keeps `document` alive across navigations while re-running
+  // inline scripts — register the delegated handler exactly once.
+  if (!window.__siteHeaderInit) {
+    window.__siteHeaderInit = true
+    document.addEventListener('click', function (e) {
+      var themeBtn = e.target.closest('#theme-toggle')
+      if (themeBtn) {
+        var apply = function () {
+          var dark = document.documentElement.classList.toggle('dark')
+          localStorage.setItem('theme', dark ? 'dark' : 'light')
+          themeBtn.setAttribute('aria-pressed', String(dark))
+        }
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        if (document.startViewTransition && !reduce) document.startViewTransition(apply)
+        else apply()
+        return
       }
-      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      if (document.startViewTransition && !reduce) document.startViewTransition(apply)
-      else apply()
-      return
-    }
-    var menuBtn = e.target.closest('#menu-toggle')
-    if (menuBtn) {
-      var nav = document.getElementById('mobile-nav')
-      var open = nav.classList.toggle('hidden') === false
-      menuBtn.setAttribute('aria-expanded', String(open))
-    }
-  })
+      var menuBtn = e.target.closest('#menu-toggle')
+      if (menuBtn) {
+        var nav = document.getElementById('mobile-nav')
+        var open = nav.classList.toggle('hidden') === false
+        menuBtn.setAttribute('aria-expanded', String(open))
+      }
+    })
+  }
 </script>

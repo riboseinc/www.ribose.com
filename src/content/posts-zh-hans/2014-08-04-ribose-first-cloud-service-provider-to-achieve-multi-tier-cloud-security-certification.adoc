@@ -1,0 +1,62 @@
+---
+layout: post
+title: "Ribose first Cloud Service Provider to achieve Multi-Tier Cloud Security certification"
+date: 2014-08-04 15:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Ribose first Cloud Service Provider to achieve Multi-Tier Cloud Security certification
+---
+= Ribose first Cloud Service Provider to achieve Multi-Tier Cloud Security certification
+
+*Compliant to Singapore Standard SS 584, world's first multi-tiered cloud standard*
+
+*Singapore/Hong Kong, 5 August 2014 --* http://www.ribose.com[Ribose] has
+become the world's first cloud service provider (CSP) to achieve
+Singapore's
+https://www.imda.gov.sg/regulations-licensing-and-consultations/ict-standards-and-quality-of-service/it-standards-and-frameworks/mtcs-certification-scheme[Multi-Tier
+Cloud Security (MTCS)] certification.
+
+Initiated by the https://www.imda.gov.sg[Infocomm Development Authority of
+Singapore (IDA)] and developed under the
+http://www.itsc.org.sg[Information Technology Standards Committee
+(ITSC)], the MTCS is a Singapore Standard (SS 584:2013) that specifies
+stringent security and operational requirements for CSPs to encourage
+adoption of sound risk management and security practices. The
+certification specifies three tiers of security certification, with
+level three being the highest.
+
+Ribose's level one MTCS certification was awarded after thorough
+evaluation by http://www.bsigroup.com[BSI (British Standards
+Institution)], a participating Certification Body for the MTCS standard.
+
+IDA Assistant Chief Executive Khoong Hock Yun said, "`Cloud computing is
+a key enabler for Singapore's drive to become a Smart Nation. Security
+of the cloud is a critical concern answered by the Multi-Tier Cloud
+Security standard. We are heartened that global industry players have
+taken a keen interest in it and are signing on to adopt the measures.`"
+
+"`BSI has demonstrated its leadership position in cloud security
+certification by delivering the world's first MTCS certification to
+Ribose. Through our global network of BSI offices, we are proud to have
+been Ribose's certification partner in several milestone security
+certification -- including
+http://www.iso.org/iso/home/standards/management-standards/iso27001.htm[ISO/IEC
+27001:2013], http://cloudsecurityalliance.org/[CSA's]
+https://cloudsecurityalliance.org/star/certification/[STAR] and now
+MTCS,`" explained Owen Xu, General Manager of BSI Singapore. "`These
+multiple certifications stand as clear testament of Ribose's dedication
+to data security and privacy.`"
+
+According to Ribose founder Ronald Tse, "`By achieving MTCS
+certification, Ribose has reached another milestone in our commitment to
+data security and protection. This latest achievement further enhances
+our comprehensive portfolio of security certifications, giving users the
+peace of mind to collaborate online with confidence using the Ribose
+platform. We thank the IDA and BSI for their guidance and support, which
+have enabled Ribose to become the world's first MTCS certified cloud
+service provider.`"
+

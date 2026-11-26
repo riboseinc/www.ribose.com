@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Our commitment to quality"
+date: 2015-09-03 16:00:00
+categories: ribose
+featured: true
+author:
+  name: Ronald Tse
+  email: tse@ribose.com
+excerpt: >-
+  Our commitment to quality
+archived: true
+---
+= Our commitment to quality
+
+Hello again!
+
+In line with our practice with for achieving better transparency, this
+is our quality policy for your reading pleasure. These policies will be
+moved into a separate, permanent section on our public site soon.
+
+Quality of products and services define the success of Ribose through
+building its integrity and reputation. We have implemented a Quality
+Management System compliant to ISO 9001:2015 to achieve these goals in a
+systematic manner.
+
+This policy defines quality requirements that all firm personnel shall
+adhere to, including staff, contractors, and people working on behalf of
+Ribose:
+
+1.  We are committed to conform with subscribed quality standards and
+maintain our certifications regarding quality.
+2.  Work closely with customers and suppliers to establish and implement
+the highest quality standards to meet customer requirements.
+3.  The Quality manager is responsible to enforce compliance with this
+and all quality related policies, and ensure that internal audit
+mechanisms exist to monitor and measure compliance with this policy.
+4.  All personnel must strive to continually improve the quality profile
+of the firm.
+5.  Every functional area should perform the following duties as
+applicable in their domain:
+* define quality objectives
+* carry out risk assessments and risk treatments
+* ensure quality controls are effectively maintained
+* implement programs to measure objective performance and continual
+improvement
+* conform with quality standards subscribed by the firm
+* adapt a strong customer focus by ensuring customer requirements and
+applicable statutory and regulatory requirements are determined and
+met; continuously evaluate and address risks and opportunities that can
+affect product or service quality and customer satisfaction; and strive
+to enhance customer satisfaction
+
