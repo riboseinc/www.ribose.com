@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/Base.astro'
+import SoftwareList from '../../components/SoftwareList.astro'
+import SuiteCard from '../../components/SuiteCard.astro'
+import EdgeLinks from '../../components/EdgeLinks.astro'
+import { suites, suiteById, domainById, platformConsumerSuites } from '../../lib/registry'
+import BrandMark from '../../components/BrandMark.astro'
+import Crumbs from '../../components/Crumbs.astro'
+import { suiteMark } from '../../lib/identity'
+import { softwareJsonLd, breadcrumbJsonLd } from '../../lib/seo'
+
+export function getStaticPaths() {
+  return suites.map((suite) => ({ params: { id: suite.id } }))
+}
+
+const { id } = Astro.params
+const suite = suiteById(id!)!
+const domain = domainById(suite.domain)
+const platforms = platformConsumerSuites(suite)
+const related = suites.filter((s) => s.domain === suite.domain && s.id !== suite.id).slice(0, 3)
+const jsonLd = [
+  softwareJsonLd(suite),
+  breadcrumbJsonLd([
+    { name: 'Technologies', path: '/technologies' },
+    { name: suite.name, path: `/technologies/${suite.id}` },
+  ]),
+]
+---
+<BaseLayout title={suite.name} description={suite.tagline} path={`/technologies/${suite.id}`} jsonLd={jsonLd}>
+  <article class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <Crumbs items={[{ href: '/technologies', label: 'Technologies' }, ...(domain ? [{ label: domain.name }] : [])]} />
+    <div class="mt-6 flex flex-wrap items-baseline gap-3" transition:name={`suite-${suite.id}`}>
+      <h1 class="h-display text-4xl font-bold sm:text-5xl">{suite.name}</h1>
+      {domain && <span class="rounded-full border border-line px-3 py-1 text-sm font-medium text-slate-600 dark:border-slate-700 dark:text-slate-300">{domain.name}</span>}
+      {suite.deprecated && <span class="rounded-full border border-line px-2 py-0.5 text-xs text-slate-400 dark:border-slate-700 dark:text-slate-500">deprecated</span>}
+    </div>
+    <p class="mt-3 max-w-2xl text-xl text-slate-600 dark:text-slate-300">{suite.tagline}</p>
+    <BrandMark mark={suiteMark(suite.id, suite.name)} name={suite.name} imgClass="mt-6 h-14 w-14" />
+    <p class="mt-4 flex flex-wrap gap-4 text-sm">
+      {suite.site && !suite.site.startsWith('todo') && <a class="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 font-medium text-slate-700 no-underline transition hover:border-slate-400 hover:text-ink dark:border-slate-700 dark:bg-ink-2 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:text-white" href={suite.site} rel="noopener">{suite.site.replace(/^https?:\/\//, '')} ↗</a>}
+      <a class="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 font-medium text-slate-700 no-underline transition hover:border-slate-400 hover:text-ink dark:border-slate-700 dark:bg-ink-2 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:text-white" href={`https://github.com/${suite.org}`} rel="noopener">github.com/{suite.org} ↗</a>
+    </p>
+    <EdgeLinks powers={[...(platforms.map((p) => p.id)), ...(suite.powers ?? [])].filter((p, i, a) => a.indexOf(p) === i)} uses={suite.uses ?? []} />
+    <SoftwareList softwares={suite.softwares} org={suite.org} />
+    <p class="mt-10 text-sm text-slate-500 dark:text-slate-400">Full inventory: <a href={`https://github.com/orgs/${suite.org}/repositories`}>all repositories in {suite.org} ↗</a></p>
+
+    {related.length > 0 && (
+      <section class="mt-14 border-t border-line pt-10 dark:border-slate-800" aria-labelledby="related-heading">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <div>
+            <p class="eyebrow">Keep exploring</p>
+            <h2 id="related-heading" class="h-display mt-1.5 text-2xl font-bold">More in {domain?.name}</h2>
+          </div>
+          <a href={`/technologies?domain=${suite.domain}`} class="text-sm font-semibold text-brand-700 no-underline hover:underline dark:text-brand-400">All {domain?.name} →</a>
+        </div>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {related.map((rel) => <SuiteCard suite={rel} />)}
+        </div>
+      </section>
+    )}
+  </article>
+</BaseLayout>

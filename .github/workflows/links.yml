@@ -14,20 +14,17 @@ on:
 jobs:
   link_checker:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: hub
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
-          cache-dependency-path: hub/package-lock.json
+          cache-dependency-path: package-lock.json
       - name: Restore wire cache
         uses: actions/cache@v4
         with:
-          path: hub/.wire-cache
+          path: .wire-cache
           key: wire-${{ github.run_id }}
           restore-keys: wire-
 
@@ -47,6 +44,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           args: >-
             --verbose --no-progress --cache --max-cache-age 1d
-            --base "$PWD/hub/dist"
-            'hub/dist/**/*.html'
+            --base "$PWD/dist"
+            'dist/**/*.html'
           fail: true

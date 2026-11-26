@@ -36,3 +36,9 @@
    self-canonicals).
 3. Every displayed network badge's origin label matches the registry id.
 4. Retracted/withdrawn items never serve a full body from the hub.
+
+## Status 2026-10-24
+
+PARTIAL: structural validation, rendition-integrity, and byte-stability gates
+live in @riboseinc/newsml-spoke (`validate` command + tests). PENDING: XSD
+2.35 gate (awaits newsmlg2-ts validation support); hub nightly strict sync.

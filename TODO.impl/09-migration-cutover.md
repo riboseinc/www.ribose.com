@@ -1,6 +1,10 @@
 # 09 — Migration, deploy, cutover
 
-Status: MIGRATION DONE (this session); deploy + cutover PENDING
+Status: CUTOVER DONE (2026-10-24, branch feat/cutover-hub-root): hub is the repo
+root; legacy Jekyll removed; deploy via Cloudflare Pages. Deferred: legacy
+`404.html`, `cves/`, `fr/`, `ja/`, `zh-hans/`, `zh-hant/`, `openpgp_keys/`
+removal pending a redirect/lychee audit; AWS/CloudFront rollback stays until
+TODO.ribose/04.
 
 Done (content moved as files, never retyped; rendered via Asciidoctor):
 - 79 EN posts: MOVED from _posts/ -> hub/src/content/posts/ (within this repo)

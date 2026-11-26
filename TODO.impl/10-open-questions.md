@@ -14,3 +14,13 @@ Still open:
 - Claricle `powers` the Metanorma platform? (probable, unconfirmed)
 - Verify claim wording for ISO/TC 211, CalConnect, IETF on /customers/.
 - Legacy team portraits + award images pipeline.
+
+## Update 2026-10-24
+
+- cryptode: retired (`deprecated: true` in the registry; cryptode.com is dead).
+- retrace, ammitto, konneal, serialbench: confirmed valid (`curated: true`).
+- arrolio: valid but not yet finished.
+- Site `todo:` markers remaining: riffol, nereon, retrace, bacman, ammitto,
+  arrolio, edoxen (canonical URL).
+- untded, oimlsmart, ommisa (client work), sasil, kaohi, hanology: deliberately
+  not listed (owner decision 2026-10-23).

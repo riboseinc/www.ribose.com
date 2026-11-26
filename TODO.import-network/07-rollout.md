@@ -36,3 +36,10 @@
 - Time from spoke publish → hub Network listing ≤ one hub rebuild.
 - Zero manual steps to add a spoke (registry entry + adapter config).
 - XSD-valid output from every spoke, every commit, forever.
+
+## Status 2026-10-24
+
+M1–M3 DONE (codec, contract, pubid pilot). M4 DONE differently (hub spoke
+reader live un-flagged from the start). M5 PARTIAL (konneal wired; serialbench,
+lutaml, metanorma pending). M6 PARTIAL (byte-stability + structural gates in
+the spoke package; XSD pending). M7 PENDING.

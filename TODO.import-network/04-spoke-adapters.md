@@ -43,3 +43,11 @@ only per-stack code.
 - `newsml.xml` + every item XSD-valid (CI gate, see 06).
 - All media referenced by renditions exist (link checker).
 - Spoke's own pages unchanged; output is purely additive (`/news-data/`).
+
+## Status 2026-10-24
+
+DONE: @riboseinc/newsml-spoke package (emit + validate + CLI, byte-stable);
+pubid migrated off its bespoke emitter (output byte-identical except the
+deterministic index `sent`); konneal wired with an empty feed. PENDING:
+serialbench onboarding (site repo not checked out locally); metanorma and
+lutaml adapters.
